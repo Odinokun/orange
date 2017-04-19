@@ -1,0 +1,319 @@
+extends ../_template
+
+block variables
+  - var title = 'Услуги 1'
+  - var pageHeaderTitle = 'Уход за волосами'
+
+block content
+  include ../common/_menu
+
+  .content.service-01
+
+    include ../common/_page-header
+
+    .container
+      //- .service-banner.service-banner-01
+      .service-banner
+        .service-banner__bg-pic--desc
+          img(src="assets/img/bg-servise-banner-01.jpg", alt="background image")
+        .service-banner__bg-pic--mob
+          img(src="assets/img/bg-servise-banner-01m.jpg", alt="background image")
+        h3.service-banner__title Сделаем яркий момент еще красочнее
+        p.service-banner__text Наши стилисты постоянно учавствуют на международных конкурсах и выставках, с каждым годом оттачивая свое мастерство.
+
+    include ../common/_our-works
+
+    include ../common/_banner-03
+
+    .container
+      .materials
+        .materials__brand
+          h3.materials__brand--title В работе мы используем косметику:
+          .materials__brand--pic
+            img(src="assets/img/materials-brand.png", alt="materials brand logo")
+        .materials__pic
+          img(src="assets/img/materials-picture.png", alt="picture")
+        .materials__slogan
+          .materials__slogan--pic
+            img(src="assets/img/materials-slogan.png", alt="icon")
+          p.materials__slogan--text Салон красоты Апельсин является лидером по количеству окрашиваний и проданных позиций марки L`oreal в Северо-западном регионе.
+
+    .container
+      .service-stat
+        .service-stat__list
+          .service-stat__item
+            h3.service-stat__numeral 134000
+            h4.service-stat__text
+              |клиентов
+              br
+              |за 2015 год
+          .service-stat__item
+            h3.service-stat__numeral 11556
+            h4.service-stat__text
+              |окрашиваний
+              br
+              |в 2015 году
+          .service-stat__item
+            h3.service-stat__numeral 850
+            h4.service-stat__text
+              |литров шампуня
+              br
+              |израсодовано
+          .service-stat__item
+            h3.service-stat__numeral 428
+            h4.service-stat__text
+              |литров краски
+              br
+              |использовано
+
+    .container
+      .price
+        .price-header
+          h2.price-header__title Стоимость услуг
+
+        .accordeon-header
+          h3.accordeon-header__title Стрижки и укладки с применением косметики фирмы L`oreal
+        .accordeon
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Стрижки с укладкой феном
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Укладка феном легкая, по форме
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Укладка коктейльная
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Прически свадебные, вечерние
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+
+        .accordeon-header
+          h3.accordeon-header__title Стрижки и укладки с применением косметики фирмы Kerastase
+        .accordeon
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Стрижки горячими ножницами или с использованием утюга
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Укладка феном легкая, по форме
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Укладка коктейльная
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+
+        .accordeon-header
+          h3.accordeon-header__title Стрижки и укладки с применением косметики фирмы Kerastase
+        .accordeon
+          .accordeon__item.accordeon__item--small
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Стрижки горячими ножницами или с использованием утюга
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+
+          .accordeon__item.accordeon__item--small
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Укладка феном легкая, по форме
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+
+          .accordeon__item.accordeon__item--small
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Укладка коктейльная
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+
+
+
+    include ../common/_masters-sec
+
+    include ../common/_banner-02
+
+  include ../common/_footer

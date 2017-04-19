@@ -1,0 +1,45 @@
+nav.menu
+  .container
+    ul.menu__list
+      li.menu__item
+        a.menu__link(href="#") Акции
+      li.menu__item
+        a.menu__link(href="#salons") Салоны
+      li.menu__item
+        a.menu__link(href="#service") Услуги
+      li.menu__item
+        a.menu__link.logo(href="#")
+          img(src="assets/img/logo.png", alt="logo")
+      li.menu__item
+        a.menu__link(href="#masters") Мастера
+      li.menu__item
+        a.menu__link(href="#") Новости
+      li.menu__item
+        a.menu__link(href="#")
+          .btn-link__wrap
+            a.btn-link(href="#") Записаться
+
+nav.menu-mob
+  .container
+    include ../common/_burger
+    ul.menu-mob__list
+      li.menu-mob__item
+        a.menu-mob__link(href="#") Акции
+      li.menu-mob__item
+        a.menu-mob__link(href="#salons") Салоны
+      li.menu-mob__item
+        a.menu-mob__link(href="#service") Услуги
+      li.menu-mob__item
+        a.menu-mob__link(href="#masters") Мастера
+      li.menu-mob__item
+        a.menu-mob__link(href="#") Новости
+
+    a.menu-mobile__logo(href="#")
+      img(src="assets/img/logo.svg", alt="logo")
+
+    .menu-mobile__btn
+      include ../common/_btn-link
+
+      .btn-link__wrap--min
+        a.btn-link(href="#")
+          img(src="assets/img/pencil.svg")

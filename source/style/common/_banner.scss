@@ -1,0 +1,171 @@
+.banner-sec {
+  @include m680() {
+    margin-bottom: 1.5rem;
+  }
+}
+.banner {
+  position: relative;
+  padding: 2rem 0 2rem 0;
+  border-radius: .8rem;
+  background: #bebebe url('../img/bg-banner.jpg') 50% 50%/cover no-repeat;
+
+  @include m680() {
+    padding-bottom: 3rem;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 25rem;
+    content: '';
+    background: transparent url('../img/banner-ribbon.png') 0 0/contain no-repeat;
+
+    @include m425() {
+      display: none;
+    }
+  }
+  .btn-link {
+    @include m1024() {
+      font-size: 1.6rem;
+      padding:.6rem 1.5rem .3rem 1.5rem;
+    }
+  }
+}
+.banner-text,
+.banner-btn {
+  display: inline-block;
+  vertical-align: middle;
+}
+.banner-text {
+  position: relative;
+  z-index: 10;
+  width: 76%;
+  padding: 1rem 0 1rem 20rem;
+
+  @include m680() {
+    width: 100%;
+  }
+  @include m425() {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  .highlight {
+    color: #f2a621;
+  }
+  .large {
+    font-size: 3.6rem;
+
+    @include m1024() {
+      font-size: 2.8rem;
+    }
+    @include m425() {
+      font-size: 2.4rem;
+    }
+  }
+}
+.banner-text__title {
+  font-size: 3.6rem;
+  line-height: 1;
+  display: inline-block;
+  padding: .5rem 0;
+  text-transform: none;
+  color: #505050;
+
+  @include gilroy(bold);
+  @include m768() {
+    font-size: 3.3rem;
+  }
+  @include m425() {
+    font-size: 2.4rem;
+  }
+}
+.banner-text__subtitle {
+  font-size: 2.4rem;
+  line-height: 1;
+  display: inline-block;
+  padding: .5rem 0;
+  text-transform: none;
+  color: #505050;
+
+  @include gilroy(bold);
+  @include m680() {
+    font-size: 2rem;
+  }
+  @include m425() {
+    font-size: 1.8rem;
+  }
+}
+.banner-btn {
+  width: 23%;
+  padding: 3rem 0;
+  text-align: center;
+
+  @include m680() {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    transform: translate(0, 50%);
+  }
+}
+
+.banner-02 {
+  margin-top: 2rem;
+  .banner-text {
+    padding: 1rem 0 1rem 24rem;
+
+    @include m425() {
+      padding: 1rem 2rem;
+    }
+  }
+  .banner-text__title {
+    font-size: 3rem;
+
+    @include m1024() {
+      font-size: 2.4rem;
+    }
+    @include m425() {
+      font-size: 2rem;
+    }
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 22rem;
+    content: '';
+    background: transparent url('../img/banner-scissors.png') 0 100%/contain no-repeat;
+
+    @include m425() {
+      display: none;
+    }
+  }
+}
+
+.banner-03 {
+  margin: 2rem 0;
+  .banner-text {
+    padding: 1rem 0 1rem 24rem;
+
+    @include m425() {
+      padding: 1rem 2rem;
+    }
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 23rem;
+    content: '';
+    background: transparent url('../img/banner-lady.png') 100% 100%/contain no-repeat;
+
+    @include m425() {
+      display: none;
+    }
+  }
+}

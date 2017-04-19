@@ -1,0 +1,41 @@
+// begin popup
+.layerBox
+.popupBox.feedback
+  .popupInn
+    .close
+      svg
+        use(xlink:href="assets/img/sprite.svg#close")
+    .top_block
+      svg
+        use(xlink:href="assets/img/sprite.svg#message")
+      h3 Обратная связь
+    .formBox
+      form(action='#', method='post')
+        h4 Имя*
+        .inputBox
+          input(type='text')
+        h4 E-mail*
+        .inputBox
+          input(type='text')
+        h4 Телефон
+        .inputBox.error
+          input(type='text')
+        h4 Сообщение
+        .textareaBox
+          textarea
+        p.formBox__small-text
+          |*Настоящим в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» от 27.07.2006, отправляя данную форму, вы подтверждаете свое согласие на обработку персональных данных. Мы гарантируем конфиденциальность получаемой нами информации. Обработка персональных данных осуществляется в целях эффективного исполнения сделок в соответствии с «Политикой конфиденциальности персональных данных»
+        .sendBtn__wrap
+          .btnBox.sendBtn
+            input(type='submit', placeholder='отправить')
+
+
+.popupBox.success
+  .popupInn
+    svg
+      use(xlink:href="assets/img/sprite.svg#message")
+    h5 Сообщение отправленно!
+
+    .btnBox.btn-link__wrap
+      a.btn-link.success__btn(href="#") Ок
+// end   popup

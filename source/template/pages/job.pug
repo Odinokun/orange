@@ -1,0 +1,187 @@
+extends ../_template
+
+block variables
+  - var title = 'Вакансии'
+  - var pageHeaderTitle = 'Вакансии'
+
+block content
+  include ../common/_menu
+
+  .content
+    include ../common/_page-header
+    .container
+      .sertificate-2-header
+        h2.sertificate-2-header__title Заполните анкету наиболее подробно
+        p Поля, помеченные звездочкой * , обязательные для заполнения.
+
+      .job-form-wrap
+        form.job-form
+          .job-form__row
+            .job-form__left
+              label Желаемая должность
+            .job-form__right
+              select.job-select.selectmenu
+                option(value="") Select 1
+                option(value="") Select 2
+                option(value="") Select 3
+
+          .job-form__row
+            .job-form__left
+              label Фамилия*
+            .job-form__right
+              input(type="text" required)
+          .job-form__row
+            .job-form__left
+              label Имя*
+            .job-form__right.error
+              input(type="text" required)
+          .job-form__row
+            .job-form__left
+              label Отчество
+            .job-form__right
+              input(type="text")
+
+          .job-form__row
+            .job-form__left
+              label Дата рождения*
+            .job-form__right
+              .job-form__select-row
+                .job-form__select-wrap.error
+                  select.job-select.selectmenu(required)
+                    option(value="") День
+                    option(value="01") 01
+                    option(value="02") 02
+                    option(value="03") 03
+                .job-form__select-wrap
+                  select.job-select.selectmenu(required)
+                    option(value="") Месяц
+                    option(value="январь") январь
+                    option(value="февраль") февраль
+                    option(value="март") март
+                .job-form__select-wrap
+                  select.job-select.selectmenu(required)
+                    option(value="") Год
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+                    option(value="1980") 1980
+                    option(value="1990") 1990
+                    option(value="2000") 2000
+
+          .job-form__row
+            .job-form__left
+              label Место рождения*
+            .job-form__right
+              input(type="text" required)
+
+          .job-form__row
+            .job-form__left
+              label Телефон 1*
+            .job-form__right.phone
+              input(type="text" required)
+
+          .job-form__row
+            .job-form__left
+              label Телефон 2*
+            .job-form__right.phone
+              input(type="text" required)
+
+          .job-form__row
+            .job-form__left
+              label Учебное заведение
+            .job-form__right
+              input(type="text")
+
+          .job-form__row
+            .job-form__left
+              label Последнее место работы
+            .job-form__right
+              input(type="text")
+
+          .job-form__row
+            .job-form__left
+              label Срок работы по специальности
+            .job-form__right
+              select.job-select.selectmenu
+                option(value="") Выберите стаж работы
+                option(value="Без опыта работы") Без опыта работы
+                option(value="До двух лет") До двух лет
+                option(value="Два года и больше") Два года и больше
+
+          .job-form__row
+            .job-form__left
+              label Уровень владения ПК
+            .job-form__right
+              input(type="text")
+
+          .job-form__row
+            .job-form__left
+              label Последнее место работы
+            .job-form__right
+              input(type="text")
+
+          .job-form__row
+            .job-form__left
+              label Наличие В/У и автомобиля
+            .job-form__right
+              input(type="text")
+
+          .job-form__row-textarea
+            .job-form__left
+              label Дополнительная информация
+            .job-form__right
+              textarea
+
+          .job-form__row
+            .job-form__left
+              label Желаемое мето работы
+            .job-form__right
+              select.job-select.selectmenu
+                option(value="") Выберите салон
+                option(value="Без опыта работы") Без опыта работы
+                option(value="До двух лет") До двух лет
+                option(value="Два года и больше") Два года и больше
+
+          .job-form__row
+            .job-form__left
+
+            .job-form__right
+              .single-certificate__btn-wrap
+                button.single-certificate__btn Отправить
+
+
+
+  include ../common/_footer

@@ -1,0 +1,180 @@
+.reviews-sec {
+  background: transparent url('../img/bg-reviews.jpg') 50% 50%/cover no-repeat;
+  .section-title {
+    margin-bottom: -2rem;
+    .section-title__text {
+      color: #fff;
+
+      @include m425() {
+        font-size: 3rem;
+      }
+    }
+  }
+  //общие стили для верхнего слайдера
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 0;
+    text-align: center;
+  }
+  .bx-wrapper {
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .bx-viewport {
+    padding: 0 10rem;
+
+    @include m1024() {
+      padding: 0 6rem;
+    }
+    @include m425() {
+      padding: 0;
+    }
+  }
+  .bx-wrapper .bx-controls-direction a {
+    width: 4rem;
+    height: 9.2rem;
+    margin-top: -5rem;
+
+    @include m768() {
+      margin-top: -9rem;
+    }
+    @include m500() {
+      margin-top: -11rem;
+      // display: none;
+    }
+  }
+  .bx-wrapper .bx-prev,
+  .bx-wrapper .bx-next {
+
+    visibility: visible;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      margin: auto;
+      content: '';
+      transition: .5s;
+      background-image: url('../img/bx/review-arr.png');
+      background-repeat: no-repeat;
+        transition: .5s;
+
+    }
+  }
+  .bx-wrapper .bx-prev {
+    &:before {
+      opacity: 1;
+      background-position: 0 0;
+    }
+    &:after {
+      opacity: 0;
+      background-position: 0 100%;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+  .bx-wrapper .bx-next {
+    &:before {
+      opacity: 1;
+      background-position: 100% 0;
+    }
+    &:after {
+      opacity: 0;
+      background-position: 100% 100%;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+      &:before {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.reviews-ava,
+.reviews-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.reviews-ava {
+  width: 20%;
+  text-align: center;
+
+  @include m1024() {
+    width: 29%;
+  }
+  @include m768() {
+    display: block;
+    width: 100%;
+  }
+}
+
+.reviews-ava__pic {
+  display: block;
+  width: 100%;
+  max-width: 17rem !important;
+  margin: 2rem auto;
+  border: .3rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 3.1rem 0 rgba(242,151,8,1);
+}
+.reviews-text {
+  width: 79%;
+  padding: 1rem 5rem;
+
+  @include m1024() {
+    width: 70%;
+    padding: 1rem;
+  }
+  @include m768() {
+    display: block;
+    width: 100%;
+  }
+  p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-align: left;
+    color: #fff;
+
+    @include m1024() {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+    @include m768() {
+      text-align: center;
+    }
+  }
+}
+
+.reviews-sec__bottom-link {
+  padding: 3.5rem 0 2rem 0;
+  text-align: center;
+  a {
+    font-size: 2.4rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #fff;
+
+    @include gilroy(bold);
+    &:hover {
+      text-decoration: underline;
+      color: #f6882b;
+    }
+  }
+}

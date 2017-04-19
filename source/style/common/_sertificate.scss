@@ -1,0 +1,168 @@
+.certificate {
+  margin-bottom: 5.5rem;
+  .ui-selectmenu-button.ui-button {
+    margin-right: 3rem;
+  }
+}
+.certificate__item {
+  display: inline-block;
+  vertical-align: middle;
+  &--pic {
+    width: 30%;
+
+    @include m680() {
+      width: 100%;
+    }
+  }
+  &--text {
+    width: 51%;
+    padding: 1rem 3rem;
+
+    @include m680() {
+      width: 70%;
+      padding: 1rem 0;
+    }
+    @include m500() {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &--btn {
+    width: 18%;
+    text-align: center;
+
+    @include m680() {
+      width: 29%;
+    }
+    @include m500() {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+.certificate__pic--wrap {
+  position: relative;
+  max-width: 36rem;
+  margin-bottom: 2rem;
+
+  @include m500() {
+    margin: 0 auto;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16rem;
+    height: 16rem;
+    content: '';
+    background: transparent url('../img/sertificate-ribbon.png') 0 0/contain no-repeat;
+  }
+}
+.certificate__pic {
+  display: block;
+  width: 100%;
+}
+
+.certificate__title {
+  font-size: 3.6rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #4f4f4f;
+
+  @include gilroy(bold);
+}
+.certificate__text {
+  font-size: 1.6rem;
+  color: #4f4f4f;
+
+  @include gilroy(bold);
+}
+
+.certificate__btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 18rem;
+  padding-bottom: .3rem;
+  text-align: center;
+  border-radius: .8rem;
+  background-color: #f8d18f;
+  &--link {
+    font-size: 2rem;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    width: 100%;
+    max-width: 18rem;
+    padding: .5rem 1.5rem .3rem 1.5rem;
+    transition: .5s;
+    text-decoration: none;
+    letter-spacing: .03rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: .8rem;
+    background-color: #f2a621;
+    box-shadow: 0 0 1.5rem 0 rgba(242,166,33,.7);
+    text-shadow: 0 0 3rem #ef0909;
+
+    @include gilroy(bold);
+    &:hover {
+      transition: .5s;
+      color: #fff;
+      background-color: #f68728;
+      text-shadow: 0 0 1rem #f2a621;
+    }
+  }
+}
+.certificate-select__title {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+
+  @include gilroy(bold);
+}
+.ui-button .ui-icon {
+  width: 0;
+  height: 0;
+  margin-top: .7rem;
+  border-top: 1rem solid #f68728;
+  border-right: .7rem solid transparent;
+  border-left: .7rem solid transparent;
+  background: transparent;
+}
+.ui-selectmenu-button.ui-button {
+  width: 100%;
+  max-width: 28rem;
+  padding: 1rem 2rem;
+  border-color: transparent;
+  border-radius: .8rem;
+  outline: none;
+  background-color: #e9e6e1;
+}
+.ui-selectmenu-button.ui-selectmenu-button-open {
+  border-radius: .8rem .8rem 0 0;
+}
+.ui-selectmenu-text {
+  font-size: 1.6rem;
+  color: #505050;
+
+  @include opensans(regular);
+}
+.ui-widget.ui-widget-content {
+  font-size: 1.6rem;
+  color: #505050;
+  border-color: #e9e6e1;
+  border-radius: 0 0 .8rem .8rem;
+  background-color: #f3f3f3;
+
+  @include opensans(regular);
+}
+.ui-menu-item-wrapper {
+  padding: .8rem 1rem .8rem 2rem !important;
+}
+.ui-menu-item-wrapper.ui-state-active {
+  color: #f68728;
+  border-color: #f3f3f3;
+  background-color: #f3f3f3;
+}

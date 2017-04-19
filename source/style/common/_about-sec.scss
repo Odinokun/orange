@@ -1,0 +1,40 @@
+.about-sec {
+  text-align: center;
+}
+
+.about-sec__item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33%;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  @include m1024() {
+    width: 49%;
+    max-width: 35rem;
+  }
+  @include m680() {
+    width: 100%;
+  }
+}
+
+.about-sec__highlight {
+  color: #f2a621;
+}
+
+.about-sec__title {
+  color: #191919;
+  @include gilroy(bold);
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  text-transform: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.about-sec__text {
+  font-size: 1.8rem;
+  color: #191919;
+  line-height: 2.2rem;
+  max-width: 30rem;
+  display: inline-block;
+}

@@ -1,0 +1,19 @@
+.section-title {
+  text-align: center;
+  .highlight {
+    color: #f2a621;
+  }
+}
+.section-title__text {
+  font-size: 4rem;
+  line-height: 1.2;
+  display: inline-block;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  color: #505050;
+
+  @include gilroy(bold);
+  @include m425() {
+    font-size: 3rem;
+    }
+}

@@ -1,0 +1,47 @@
+// base
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/base';
+
+//common
+@import 'common/preloader';
+@import 'common/hamburger';
+@import 'common/menu';
+@import 'common/menu-mob';
+@import 'common/footer-top';
+@import 'common/footer-bottom';
+@import 'common/btn-link';
+@import 'common/video';
+@import 'common/servise-sec';
+@import 'common/about-sec';
+@import 'common/salon-sec';
+@import 'common/work-sec';
+@import 'common/banner';
+@import 'common/masters-sec';
+@import 'common/masters-filter';
+@import 'common/top-slider';
+@import 'common/reviews-sec';
+@import 'common/page-header';
+@import 'common/sertificate';
+@import 'common/sertificate-single';
+@import 'common/master-works-slider';
+@import 'common/salon-masters-carousel';
+@import 'common/salon-one-slider';
+@import 'common/pagination';
+@import 'common/service-banner';
+@import 'common/accordeon';
+@import 'common/popup';
+
+//pages
+@import 'pages/index';
+@import 'pages/masters';
+@import 'pages/master-one';
+@import 'pages/salone-one';
+@import 'pages/news';
+@import 'pages/news-one';
+@import 'pages/service';
+@import 'pages/sale';
+@import 'pages/error-404';
+@import 'pages/job';
+@import 'pages/email';

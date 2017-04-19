@@ -1,0 +1,98 @@
+footer.footer
+  section.footer-top
+    .container
+      .footer-top__inner.logo
+        a(href="#")
+          img(src="assets/img/logo-footer.svg", alt="logo")
+
+      .footer-top__inner.logo-title
+        p Сеть салонов АПЕЛЬСИН — совершенство вашего стиля
+
+      .footer-top__inner.social
+        a.vk
+          svg
+            use(xlink:href="assets/img/sprite.svg#vk")
+
+        a.inst
+          svg
+            use(xlink:href="assets/img/sprite.svg#inst")
+
+      .footer-top__inner.copyright
+        p Сеть салонов красоты «Апельсин»
+        p Санкт-Петербург © 2009–2016
+        p Является зарегестрированным товарным знаком
+
+  section.footer-bottom
+    .container
+      .footer-bottom__item.fb-nav
+        ul.fb-nav__list
+          li.fb-nav__item.mob
+            a.fb-nav__link(href="#") Наши салоны
+          li.fb-nav__item.mob
+            a.fb-nav__link(href="#") Услуги
+          li.fb-nav__item
+            a.fb-nav__link(href="#") Акции салонов
+          li.fb-nav__item
+            a.fb-nav__link(href="#") Мастера
+          li.fb-nav__item
+            a.fb-nav__link(href="#") О нас
+          //- li.fb-nav__item
+            a.fb-nav__link.active(href="#") Вакансии
+          li.fb-nav__item
+            a.fb-nav__link(href="#") Новости
+          li.fb-nav__item.fb-nav__item--pay
+            .fb-nav__pay.fb-nav__pay--assist
+              img(src="assets/img/assist.svg" alt="img")
+            .fb-nav__pay.fb-nav__pay--mastercard
+              img(src="assets/img/mastercard.svg" alt="img")
+            .fb-nav__pay.fb-nav__pay--visa
+              img(src="assets/img/visa.svg" alt="img")
+
+
+      .footer-bottom__item.fb-salone
+        h3.fb-salone__title
+          a.fb-salone__link-title(href="#") Наши салоны
+
+        ul.fb-salone__list
+          li.fb-salone__item
+            a.fb-salone__link(href="#", target="_blank", rel="nofollow noopener noreferrer") Коллонтай, 17, к.3
+          li.fb-salone__item
+            a.fb-salone__link(href="#", target="_blank", rel="nofollow noopener noreferrer") Коллонтай, 28, к.1
+          li.fb-salone__item
+            a.fb-salone__link(href="#", target="_blank", rel="nofollow noopener noreferrer") М. Балканская, 26
+          li.fb-salone__item
+            a.fb-salone__link(href="#", target="_blank", rel="nofollow noopener noreferrer") Пулковская 10, к.1
+          li.fb-salone__item
+            a.fb-salone__link(href="#", target="_blank", rel="nofollow noopener noreferrer") Комендантский проспект 13 к.1
+          li.fb-salone__item
+            a.fb-salone__link(href="#", target="_blank", rel="nofollow noopener noreferrer") Есенина 1, к. 1
+          li.fb-salone__item
+            a.fb-salone__link(href="#", target="_blank", rel="nofollow noopener noreferrer") Кудрово, ул. Ленинградская д.3
+          li.fb-salone__item
+            a.fb-salone__link(href="#", target="_blank", rel="nofollow noopener noreferrer") Кушелевская дорога д.3 к.1
+
+      .footer-bottom__item.fb-service
+        h3.fb-service__title
+          a.fb-service__link-title(href="#") Услуги
+
+        ul.fb-service__list
+          li.fb-service__item
+            a.fb-service__link(href="#") Уход за волосами
+          li.fb-service__item
+            a.fb-service__link(href="#") Уход за кожей
+          li.fb-service__item
+            a.fb-service__link(href="#") Уход за телом
+          li.fb-service__item
+            a.fb-service__link(href="#") Маникюр и педикюр
+          li.fb-service__item
+            a.fb-service__link(href="#") Услуги визажиста
+          li.fb-service__item
+            a.fb-service__link(href="#") Услуги для мужчин
+
+      .footer-bottom__item.fb-link
+        include ../common/_btn-link
+        .btn-link__wrap.btn-link__wrap--red
+          a.btn-link.btn-link--red(href="#") Вакансии
+        .btn-link__wrap.btn-link__wrap--popup
+          a.btn-link.btn-link--popup.popupOpen(href="#") Написать нам
+include ../common/_popup

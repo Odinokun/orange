@@ -1,0 +1,52 @@
+extends ../_template
+
+block variables
+  - var title = 'Подарочные сертификаты'
+  - var pageHeaderTitle = 'Подарочные сертификаты'
+
+block content
+  include ../common/_menu
+
+  .content
+    include ../common/_page-header
+    .container
+      .sertificate-2-header
+        h2.sertificate-2-header__title Вы собираетесь приобрести:
+
+      form.single-certificate
+        .single-certificate__item
+          .single-certificate__pic--wrap
+            img.single-certificate__pic(src="assets/img/sertificate-01.jpg", alt="sertificate")
+
+        h3.single-sertificate__title "Подарочный сертификат на 5000Р"
+
+        .single-sertificate__row.single-sertificate__row--design
+          h2.single-sertificate__descr Дизайн сертификата:
+          input.single-sertificate__val(type="text" value="Дизайн 1")
+        .single-sertificate__row.single-sertificate__row--price
+          h2.single-sertificate__descr Стоимость:
+          input.single-sertificate__val(type="text" value="5000Р")
+
+        .single-certificate__btn-wrap
+          button.single-certificate__btn Купить
+
+        div
+          select.selectmenu-salons(id='')
+            option Не выбрано
+            option Пулковская ул., д.10, к.1
+            option Кушелевская дорога д.3, к.1
+            option Малая Балканская ул., д.26
+            option Ул. Есенина, д.1, к.1
+            option Ул. Ленинградская, д.3
+            option Ул. Коллонтай, д.17, к.3
+            option Ул. Коллонтай, д.28, к.1
+            option Комендантский пр., д.13, к.1
+            option ул. Кременчугская, д.9/1
+          input#name.sertificate-2__input(type='text', placeholder='Имя')
+          input#phone.sertificate-2__input(type='text', placeholder='Телефон')
+
+
+      .sertificate-2-footer
+        p Нажав кнопку “купить”, вы подтверждаете, что ознакомилились с правилами оплаты, доставки и возврата.
+
+  include ../common/_footer

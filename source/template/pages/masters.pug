@@ -1,0 +1,305 @@
+extends ../_template
+
+block variables
+  - var title = 'Мастера'
+  - var pageHeaderTitle = 'Мастера салонов Апельсин'
+
+block content
+  include ../common/_menu
+
+  .content
+    include ../common/_page-header
+    .masters-filter
+      .container
+        .masters-filter__row
+          h2.masters-filter__title Профиль
+          .masters-filter__check--list
+            label.masters-filter__check--item.active
+              input(type='checkbox', id='')
+              span Парикмахер-стилист
+            label.masters-filter__check--item
+              input(type='checkbox', id='')
+              span Мастер маникюра
+            label.masters-filter__check--item
+              input(type='checkbox', id='')
+              span Косметолог
+            label.masters-filter__check--item.active
+              input(type='checkbox', id='')
+              span Массажист
+            label.masters-filter__check--item.active
+              input(type='checkbox', id='')
+              span топ-мастер маникюра и педикюра
+            label.masters-filter__check--item.active
+              input(type='checkbox', id='')
+              span Массажист
+
+        .masters-filter__row
+          h2.masters-filter__title Салон
+          .masters-filter__check--list
+            label.masters-filter__check--item.active
+              input(type='checkbox', id='')
+              | Пулковская 10, к.1
+            label.masters-filter__check--item
+              input(type='checkbox', id='')
+              | Кушелевская дорога д.3 к.
+            label.masters-filter__check--item
+              input(type='checkbox', id='')
+              | Малая Балканская, 26
+            label.masters-filter__check--item
+              input(type='checkbox', id='')
+              | Есенина 1, к. 1
+            label.masters-filter__check--item
+              input(type='checkbox', id='')
+              | Коллонтай, 17, к.3
+            label.masters-filter__check--item
+              input(type='checkbox', id='')
+              | Коллонтай, 28, к.1
+            label.masters-filter__check--item.active
+              input(type='checkbox', id='')
+              | Комендантский пр. 13 к.1
+            label.masters-filter__check--item
+              input(type='checkbox', id='')
+              | Оккервиль
+
+    .masters
+      .container
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-01.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Елена
+              br
+              | Левакина
+            h4.masters__position визажист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-02.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Нефедорова
+              br
+              | Александра
+            h4.masters__position
+              |парикмахер
+              br
+              |-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-03.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Белова
+              br
+              | Юлия
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-04.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Казаков
+              br
+              | Максим
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-01.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Елена
+              br
+              | Левакина
+            h4.masters__position визажист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-02.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Нефедорова
+              br
+              | Александра
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-03.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Белова
+              br
+              | Юлия
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-04.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Казаков
+              br
+              | Максим
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-01.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Елена
+              br
+              | Левакина
+            h4.masters__position визажист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-02.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Нефедорова
+              br
+              | Александра
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-03.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Белова
+              br
+              | Юлия
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-04.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Казаков
+              br
+              | Максим
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-01.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Елена
+              br
+              | Левакина
+            h4.masters__position визажист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-02.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Нефедорова
+              br
+              | Александра
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-03.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Белова
+              br
+              | Юлия
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-04.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Казаков
+              br
+              | Максим
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-01.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Елена
+              br
+              | Левакина
+            h4.masters__position визажист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-02.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              |Нефедорова
+              br
+              | Александра
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-03.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Белова
+              br
+              | Юлия
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+        .masters__item
+          img.masters__pic(src="assets/img/masters/masters-sec-04.jpg", alt="masters avatar")
+          .masters__info
+            h3.masters__name
+              | Казаков
+              br
+              | Максим
+            h4.masters__position парикмахер-стилист
+            .masters__btn--wrap
+              a.masters__btn(href="#") Подробнее о мастере
+              a.masters__btn(href="#") Записаться
+
+  include ../common/_footer

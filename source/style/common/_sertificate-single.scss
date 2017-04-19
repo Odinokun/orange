@@ -1,0 +1,134 @@
+.sertificate-2-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.sertificate-2-header__title {
+  font-size: 3rem;
+  color: #4f4f4f;
+}
+
+.single-certificate {
+  text-align: center;
+}
+.sertificate-2__input {
+  font-size: 1.6rem;
+  display: block;
+  width: 100%;
+  max-width: 28rem;
+  margin: 2rem auto 0;
+  padding: 0 2rem;
+  color: #6f6f6f;
+  border: 1px solid #adadad;
+  border-radius: 1rem;
+  outline: none;
+}
+
+.single-certificate__item {
+  display: block;
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  vertical-align: middle;
+
+  @include m1024() {
+    width: 40%;
+  }
+  @include m768() {
+    width: 45%;
+  }
+  @include m500() {
+    width: 60%;
+  }
+  @include m425() {
+    width: 90%;
+  }
+}
+.single-certificate__pic--wrap {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.single-certificate__pic {
+  display: block;
+  width: 100%;
+}
+
+.single-sertificate__title {
+  font-size: 2.4rem;
+  color: #4f4f4f;
+}
+.single-sertificate__row {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.single-sertificate__row--price {
+  .single-sertificate__val {
+    font-size: 2.4rem;
+  }
+}
+.single-sertificate__descr {
+  font-size: 1.8rem;
+  width: 55%;
+  text-align: right;
+  color: #4f4f4f;
+}
+.single-sertificate__val {
+  font-size: 1.8rem;
+  width: 45%;
+  padding-left: 2rem;
+  text-transform: uppercase;
+  color: #f39d14;
+  border: none;
+  outline: none;
+
+  @include gilroy(bold);
+}
+
+.single-certificate__btn-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 18rem;
+  margin: 3rem auto 2rem;
+  padding-bottom: .3rem;
+  text-align: center;
+  border-radius: .8rem;
+  background-color: #f8d18f;
+  .single-certificate__btn {
+    font-size: 2rem;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    width: 100%;
+    max-width: 18rem;
+    padding: .5rem 1.5rem .3rem 1.5rem;
+    transition: .5s;
+    text-decoration: none;
+    letter-spacing: .03rem;
+    text-transform: uppercase;
+    color: #fff;
+    border: none;
+    border-radius: .8rem;
+    background-color: #f2a621;
+    box-shadow: 0 0 1.5rem 0 rgba(242,166,33,.7);
+    text-shadow: 0 0 3rem #ef0909;
+
+    @include gilroy(bold);
+    &:hover {
+      transition: .5s;
+      color: #fff;
+      background-color: #f68728;
+      text-shadow: 0 0 1rem #f2a621;
+    }
+  }
+}
+
+.sertificate-2-footer {
+  max-width: 80rem;
+  margin: 0 auto;
+  p {
+    font-size: 1.4rem;
+    color: #4f4f4f;
+  }
+}

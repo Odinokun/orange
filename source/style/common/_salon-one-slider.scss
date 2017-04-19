@@ -1,0 +1,100 @@
+.salon-one-slider {
+  font-size: 0;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 0 0 0 1.5rem;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 0;
+  }
+  .bx-wrapper {
+    display: inline-block;
+    width: 64%;
+    margin: 0 1% 0 0;
+    vertical-align: top;
+    border: none;
+    box-shadow: none;
+
+    @include m680() {
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+      padding-right: 3%;
+    }
+    @include m500() {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+.salon-one-slider__pager {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 65.5%;
+  display: inline-block;
+  overflow: hidden;
+  width: 35%;
+  margin-right: -15%;
+  vertical-align: top;
+
+  @include m680() {
+    position: relative;
+    left: 0;
+    display: block;
+    width: 100%;
+  }
+  span {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 47%;
+    height: 32.2%;
+    margin-right: 3%;
+
+    @include m768() {
+      height: 31.5%;
+    }
+    @include m680() {
+      width: 30.3%;
+      height: 16rem;
+      margin-bottom: 1rem;
+    }
+    @include m500() {
+      width: 47%;
+      margin-bottom: .5rem;
+
+    }
+    @include m425() {
+      height: 12rem;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      content: '';
+      transition: all .5s;
+      background-color: rgba(0,0,0,.3);
+    }
+  }
+  a {
+    &.active span::before,
+    &:hover span::before {
+      transition: all .5s;
+      background-color: transparent;
+    }
+    img {
+      height: 100%;
+    @include m500() {
+      height: auto;
+      width: 100%;
+      min-height: 100%;
+    }
+    }
+  }
+}

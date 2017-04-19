@@ -1,0 +1,215 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* General Пример Style */
+body {
+	font-family: 'Lato', 'Myriad Pro','Trebuchet MS', sans-serif;
+	background: #f9f9f9 url(../images/bg.png) repeat top left;
+	font-weight: 300;
+	font-size: 14px;
+	color: #333;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+.container {
+	position: relative;
+	background: transparent url(../images/light.png) fixed no-repeat center top;
+}
+
+.vladmaxi-header{
+	padding: 50px 10px 10px 10px;
+	position: relative;
+	display: block;
+    text-align: center;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.7);
+}
+
+.vladmaxi-header h1,
+.vladmaxi-header-special h1{
+	font-size: 26px;
+	line-height: 26px;
+	margin: 0;
+	position: relative;
+	font-weight: 700;
+	color: #000;
+}
+
+.vladmaxi-header h2,
+.vladmaxi-header-special h2{
+	font-size: 14px;
+	line-height: 14px;
+	font-weight: 300;
+	margin: 0;
+	padding: 3px 5px;
+	margin: 10px 0 5px;
+	color: #000;
+	display: inline-block;
+}
+.vladmaxi-info {
+	padding: 20px;
+	margin: 0 auto;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.7);
+	line-height: 22px;
+}
+
+/* Header Style */
+.vladmaxi-top{
+	line-height: 24px;
+	font-size: 11px;
+	background: rgba(0, 0, 0, 0.05);
+	text-transform: uppercase;
+	z-index: 9999;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	font-family: calibri;
+	font-size: 13px;
+	box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
+	-webkit-animation: slideOut 0.5s ease-in-out 0.3s backwards;
+}
+@-webkit-keyframes slideOut{
+	0%{top:-30px; opacity: 0;}
+	100%{top:0px; opacity: 1;}
+}
+
+.vladmaxi-top a{
+	padding: 0px 10px;
+	letter-spacing: 1px;
+	color: #333;
+	text-shadow: 0px 1px 1px #fff;
+	display: block;
+	float: left;
+}
+.vladmaxi-top a:hover{
+	background: #fff;
+}
+.vladmaxi-top span.right{
+	float: right;
+}
+.vladmaxi-top span.right a{
+	float: left;
+	display: block;
+}
+.vladmaxi-demos{
+    text-align:center;
+	display: block;
+	line-height: 30px;
+	padding: 20px 0px;
+}
+.vladmaxi-demos a{
+    display: inline-block;
+	margin: 0px 4px;
+	padding: 0px 4px;
+	color: #fff;
+	line-height: 20px;	
+	font-style: italic;
+	font-family: Calibri;
+	font-size: 15px;
+	border-radius: 3px;
+	background: rgba(41,77,95,0.1);
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+.vladmaxi-demos a:hover{
+	background: rgba(41,77,95,0.3);
+}
+.vladmaxi-demos a.current,
+.vladmaxi-demos a.current:hover{
+	background: rgba(41,77,95,0.3);
+}
+
+/* Пример Buttons Style */
+.vladmaxi-demos{
+    text-align: center;
+	display: block;
+	line-height: 30px;
+	padding: 5px 0px;
+}
+.vladmaxi-demos a{
+    display: inline-block;
+	margin: 0px 10px;
+	font-weight: bold;
+	color: #333;
+	line-height: 20px;	
+	font-size: 12px;
+	background: #fff;
+	background: rgba(255,255,255,0.4);
+	padding: 0 4px;
+}
+.vladmaxi-demos a:hover{
+	border-bottom: 2px solid #f7bb6d;
+}
+.vladmaxi-demos a.current-demo,
+.vladmaxi-demos a.current-demo:hover{
+	border-bottom: 2px solid #f7bb6d;
+	color: #777;
+}
+
+.vladmaxi-header-special{
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	text-align: left;
+}
+
+.vladmaxi-header-special h2{
+	padding: 5px 20px 5px 10px;
+	color: #fff;
+	line-height: 26px;
+	background: #000;
+	background: rgba(0,0,0,0.8);
+}
+
+.vladmaxi-header-special h1{
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	display: inline-block;
+	font-size: 32px;
+	line-height: 32px;
+	padding: 20px;
+	color: #fff;
+	text-shadow: 0 0 1px #fff;
+}
+
+.vladmaxi-header-special .vladmaxi-demos{
+	text-align: left;
+}
+
+.vladmaxi-header-special .vladmaxi-demos a{
+	background: rgba(255,255,255,1);
+}
+
+.vladmaxi-header-special .vladmaxi-info{
+	color: #fff;
+	background: #000;
+	background: rgba(0,0,0,0.8);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	padding: 5px 20px 5px 10px;
+	line-height: 26px;
+	margin-top: 30px;
+	text-align: left;
+}

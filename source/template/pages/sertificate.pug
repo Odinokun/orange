@@ -1,0 +1,73 @@
+extends ../_template
+
+block variables
+  - var title = 'Подарочные сертификаты'
+  - var pageHeaderTitle = 'Подарочные сертификаты'
+
+block content
+  include ../common/_menu
+
+  .content
+    include ../common/_page-header
+    .container
+      form.certificate
+        .certificate__item.certificate__item--pic
+          #pic-select-01.certificate__pic--wrap
+            img.certificate__pic(src="assets/img/sertificate-01.jpg", alt="sertificate")
+
+        .certificate__item.certificate__item--text
+          h2.certificate__title Подарочная карта на 1000
+          p.certificate__text Предоставляет годовую скидку на все услуги и косметику сети салонов "Апельсин".
+          span.certificate-select__title Выберите дизайн сертификата:
+          select#select-01.certificate-select.selectmenu
+            option(data-path="assets/img/sertificate-01.jpg", value="sertificate1") Стандартный
+            option(data-path="assets/img/sertificate-02.jpg", value="sertificate2") Подарочный 1
+            option(data-path="assets/img/sertificate-03.jpg", value="sertificate3") Подарочный 2
+            option(data-path="assets/img/sertificate-01.jpg", value="sertificate4") Новогодний
+
+        .certificate__item.certificate__item--btn
+          .certificate__btn
+            a.certificate__btn--link(href="#") Купить
+
+
+      form.certificate
+        .certificate__item.certificate__item--pic
+          #pic-select-02.certificate__pic--wrap
+            img.certificate__pic(src="assets/img/sertificate-02.jpg", alt="sertificate")
+
+        .certificate__item.certificate__item--text
+          h2.certificate__title Подарочная карта на 2000
+          p.certificate__text Предоставляет годовую скидку на все услуги и косметику сети салонов "Апельсин".
+          span.certificate-select__title Выберите дизайн сертификата:
+          select#select-02.certificate-select.selectmenu
+            option(data-path="assets/img/sertificate-02.jpg", value="sertificate") Стандартный
+            option(data-path="assets/img/sertificate-01.jpg", value="sertificate") Подарочный 1
+            option(data-path="assets/img/sertificate-03.jpg", value="sertificate") Подарочный 2
+            option(data-path="assets/img/sertificate-02.jpg", value="sertificate") Новогодний
+
+        .certificate__item.certificate__item--btn
+          .certificate__btn
+            a.certificate__btn--link(href="#") Купить
+
+
+      form.certificate
+        .certificate__item.certificate__item--pic
+          #pic-select-03.certificate__pic--wrap
+            img.certificate__pic(src="assets/img/sertificate-03.jpg", alt="sertificate")
+
+        .certificate__item.certificate__item--text
+          h2.certificate__title Подарочная карта на 5000
+          p.certificate__text Предоставляет годовую скидку на все услуги и косметику сети салонов "Апельсин".
+          span.certificate-select__title Выберите дизайн сертификата:
+          select#select-03.certificate-select.selectmenu
+            option(data-path="assets/img/sertificate-03.jpg", value="sertificate") Стандартный
+            option(data-path="assets/img/sertificate-02.jpg", value="sertificate") Подарочный 1
+            option(data-path="assets/img/sertificate-01.jpg", value="sertificate") Подарочный 2
+            option(data-path="assets/img/sertificate-03.jpg", value="sertificate") Новогодний
+
+        .certificate__item.certificate__item--btn
+          .certificate__btn
+            a.certificate__btn--link(href="#") Купить
+
+
+  include ../common/_footer

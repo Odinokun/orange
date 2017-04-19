@@ -1,0 +1,97 @@
+.master-works {
+  margin-bottom: 1rem;
+}
+.master-works__slider {
+  //общие стили для слайдера
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 0;
+    text-align: center;
+  }
+  .bx-wrapper {
+    margin: 0 auto;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+
+    @include mf320() {
+      width: 20rem;
+    }
+    @include mf475() {
+      width: 56.2rem;
+    }
+    @include mf715() {
+      width: 85rem;
+    }
+    @include mf975() {
+      width: 114rem;
+    }
+    @include mf1200() {
+    }
+  }
+  .bx-controls-direction {
+    position: absolute;
+    top: 0;
+    right: -4rem;
+    bottom: 0;
+    left: -4rem;
+    visibility: hidden;
+    margin: auto;
+  }
+  .bx-wrapper .bx-controls-direction a {
+    width: 2.4rem;
+    height: 4rem;
+  }
+  .bx-wrapper .bx-prev,
+  .bx-wrapper .bx-next {
+    visibility: visible;
+    background-image: url('../img/bx/master-works-arr.png');
+    background-repeat: no-repeat;
+    &:after {
+    background-image: url('../img/bx/master-works-arr.png');
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      margin: auto;
+      content: '';
+      transition: .5s;
+      opacity: 0;
+
+    }
+  }
+  .bx-wrapper .bx-prev {
+    left: 0;
+    background-position: 0 100%;
+    &:after {
+      background-position: 0 0;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+  .bx-wrapper .bx-next {
+    right: 0;
+    background-position: 100% 100%;
+    &:after {
+      background-position: 100% 0;
+    }
+    &:hover {
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.master-works__item {
+  overflow: hidden;
+  border-radius: .8rem;
+}

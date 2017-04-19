@@ -1,0 +1,162 @@
+.footer-bottom {
+  text-align: center;
+  background-color: #e5e5e4;
+  box-shadow: inset 0 11rem 10rem -4.1rem rgba(206,206,206,1);
+}
+
+.footer-bottom__item {
+  display: inline-block;
+  max-width: 23rem;
+  margin: 0 8rem 1rem 0;
+  text-align: left;
+  vertical-align: top;
+
+  @include m1024() {
+    margin: 0 2rem 2rem 0;
+  }
+  @include m680() {
+    margin: 2rem;
+    &.fb-salone,
+    &.fb-service {
+      display: none;
+    }
+  }
+  @include m425() {
+    width: 100%;
+    text-align: center;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.fb-nav__list {
+  margin: 0;
+  padding: 0;
+}
+.fb-nav__item {
+  position: relative;
+  padding: 1rem 0;
+  list-style: none;
+  &.mob {
+    display: none;
+
+    @include m680() {
+      display: block;
+    }
+  }
+}
+.fb-nav__link {
+  font-size: 1.8rem;
+  transition: .5s;
+  text-transform: uppercase;
+  color: #4f4f4f;
+
+  @include gilroy(bold);
+  &:hover {
+    transition: .5s;
+    color: #f2a621;
+  }
+  &.active {
+    position: relative;
+    color: #f2a621;
+    &::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -2.5rem;
+      display: block;
+      width: 1.2rem;
+      height: 1.2rem;
+      margin: auto;
+      content: '';
+      animation: pulse 1.7s linear infinite;
+      border-radius: 50%;
+      background-color: #f2a51e;
+      box-shadow: 0 0 .5rem 0 rgba(242,166,33,.5);
+    }
+  }
+}
+.fb-nav__item--pay {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+.fb-nav__pay--assist {
+  width: 36%;
+}
+.fb-nav__pay--mastercard {
+  width: 26%;
+}
+.fb-nav__pay--visa {
+  width: 30%;
+}
+.fb-nav__pay {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fb-salone__title,
+.fb-service__title {
+  padding: 0 0 1rem 0;
+}
+.fb-salone__link-title,
+.fb-service__link-title {
+  font-size: 1.8rem;
+  transition: .5s;
+  text-transform: uppercase;
+  color: #4f4f4f;
+
+  @include gilroy(bold);
+  &:hover {
+    transition: .5s;
+    color: #f6882b;
+  }
+}
+
+.fb-salone__list,
+.fb-service__list {
+  margin: 0;
+  padding: 0;
+}
+.fb-salone__item,
+.fb-service__item {
+  position: relative;
+  padding: .2rem 0;
+  list-style: none;
+}
+.fb-salone__link,
+.fb-service__link {
+  font-size: 1.4rem;
+  transition: .5s;
+  color: #4f4f4f;
+  &:hover {
+    transition: .5s;
+    text-decoration: underline;
+    color: #f6882b;
+  }
+}
+.footer-bottom__item {
+  .btn-link__wrap,
+  .btn-link,
+  .btn-link__wrap--red,
+  .btn-link--red {
+    min-width: 20rem;
+    text-align: center;
+  }
+}

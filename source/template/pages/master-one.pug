@@ -1,0 +1,65 @@
+extends ../_template
+
+block variables
+  - var title = 'Супер мастер'
+  - var pageHeaderTitle = 'Мастера салонов Апельсин'
+
+block content
+  include ../common/_menu
+
+  .content
+    include ../common/_page-header
+
+    .master-card
+      .container.master-card__top
+        .master-card__img
+          img(src="assets/img/master-one/master-one-01.jpg", alt="masters avatar")
+
+        .master-card__info
+          h2.master-card__title Нефедорова Александра
+
+          h3.master-card__subtitle парикмахер-стилист
+
+          .master-card__text
+            p Выполняю аппаратный, классический, комбинированный, медицинский педикюр, протезирование ногтей, маникюр комбинированный, аппаратный, классический.
+            p Делаю все виды маникюра и педикюра, работаю с проблемными стопами, ногтями
+            p Курсы по дизайну гель-лаками "Kia style studio"
+
+          .master-card__contacts
+            .master-card__contacts--left
+              h2.master-card__contacts--title Салон:
+              h3.master-card__contacts--adress
+                | Кудрово,
+                br
+                | ул. Ленинградская д.3
+              h3.master-card__contacts--phone +7 (812) 678-82-82
+
+            .master-card__contacts--right
+              include ../common/_btn-link
+
+
+      .container.master-info
+        h2.page-inn__title Информация о сотруднике:
+        h3.master-info__subtitle Повышение квалификации
+
+        .master-info__list
+          h3.master-info__list-title санкт-петербургская государственная медицинская академия им. И.И. Мечиникова
+          ul
+            li.master-info__list-item По программе цикла тематического усовершенствования “Интрадермальные техники введения препаратов. Мезотерапия. Физиотерапия” (2010г.)
+            li.master-info__list-item По программе цикла тематического усовершенствования “Физиотерапия в косметологии”
+
+          h3.master-info__list-title инъекционные методики
+          ul
+            li.master-info__list-item Применение мезотерапевтических препаратов для коррекции эстетических проблем лица, тела и волос. MARTINES
+            li.master-info__list-item По программе цикла тематического усовершенствования “Физиотерапия в косметологии”
+            li.master-info__list-item Применение мезотерапевтических препаратов для коррекции эстетических проблем лица, тела и волос. MARTINES
+            li.master-info__list-item По программе цикла тематического усовершенствования “Физиотерапия в косметологии”
+
+      include ../common/_our-works
+
+      .container.master-map
+        h2.page-inn__title Адрес салона
+        .map-container
+          iframe(src="https://api-maps.yandex.ua/frame/v1/-/CZsYiIoF" width="100%" height="100%" frameborder="0")
+
+  include ../common/_footer

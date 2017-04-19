@@ -1,0 +1,145 @@
+.materials {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 1rem;
+    right: 0;
+    bottom: 4rem;
+    left: 0;
+    content: '';
+    border: .4rem solid #e8e5e0;
+    border-radius: 1.2rem;
+
+    @include m1000() {
+      bottom: 0;
+    }
+  }
+    @include m1000() {
+      margin-bottom: 2rem;
+    }
+}
+.materials__brand,
+.materials__pic,
+.materials__slogan {
+  position: relative;
+  display: inline-block;
+  margin-right: -.4rem;
+  vertical-align: middle;
+}
+.materials__brand {
+  width: 45%;
+  padding: 2rem 1rem 4rem 1rem;
+  text-align: center;
+
+  @include m1000() {
+    width: 60%;
+    padding: 3rem 1rem 3rem 1rem;
+  }
+  @include m680() {
+    width: 100%;
+  }
+  &--title {
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    color: #505050;
+
+    @include gilroy(bold);
+  @include m425() {
+    font-size: 2rem;
+  }
+  }
+  &--pic {
+    display: inline-block;
+    width: 80%;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+.materials__pic {
+  width: 25%;
+
+  @include m1000() {
+    display: none;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+.materials__slogan {
+  width: 30%;
+  padding: 2rem 1rem 4rem 2rem;
+
+  @include m1000() {
+    width: 40%;
+    padding: 3rem 2rem 3rem 2rem;
+    text-align: center;
+  }
+  @include m680() {
+display: none;
+  }
+}
+.materials__slogan--pic {
+  text-align: center;
+}
+
+.service-stat__item {
+  display: inline-block;
+  width: 25%;
+  margin-right: -.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  vertical-align: top;
+
+  @include m680() {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+}
+.service-stat__numeral {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+  color: #f2a621;
+
+  @include gilroy(bold);
+}
+.service-stat__text {
+  font-size: 1.8rem;
+  line-height: 1;
+  text-transform: none;
+  color: #191919;
+
+  @include gilroy(bold);
+}
+
+.service-text__title {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #3f3f3f;
+
+  @include gilroy(bold);
+  @include m768() {
+    margin-bottom: 0;
+  }
+}
+.service-text__body {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  display: inline-block;
+  margin: 1rem 0;
+  color: #3f3f3f;
+
+  @include opensans(regular);
+}
+
+.service-01 {
+  .banner-sec {
+    margin-bottom: 2rem;
+  }
+}

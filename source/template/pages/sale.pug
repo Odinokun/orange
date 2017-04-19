@@ -1,0 +1,71 @@
+extends ../_template
+
+block variables
+  - var title = 'Акции'
+  - var pageHeaderTitle = 'Акции и спецпредложения'
+
+block content
+  include ../common/_menu
+
+  .content.sale
+
+    include ../common/_page-header
+
+    .container
+      .sale-card
+        .sale-card__pic
+          img(src="assets/img/sale/sale-01.jpg", alt="sale card image")
+        h3.sale-card__title
+          | Дни косметолога!
+          br
+          span.sale-highlight 15%
+          =" "
+          | скидка
+        p.sale-card__text на все инъекции
+        .sale-btn
+          .btn-link__wrap
+            a.btn-link(href="#") Подробнее
+
+      .sale-card
+        .sale-card__pic
+          img(src="assets/img/sale/sale-02.jpg", alt="sale card image")
+        h3.sale-card__title
+          | Дни скидок на все!
+          br
+          span.sale-highlight 25%
+          =" "
+          | скидка
+        p.sale-card__text на все услуги салонов
+        .sale-btn
+          .btn-link__wrap
+            a.btn-link(href="#") Подробнее
+
+      .sale-card
+        .sale-card__pic
+          img(src="assets/img/sale/sale-03.jpg", alt="sale card image")
+        h3.sale-card__title
+          | Дни ламинирования ресниц!
+          br
+          span.sale-highlight 20%
+          =" "
+          | скидка
+        p.sale-card__text на ламинирование ресниц
+        .sale-btn
+          .btn-link__wrap
+            a.btn-link(href="#") Подробнее
+
+      .sale-card
+        .sale-card__pic
+          img(src="assets/img/sale/sale-04.jpg", alt="sale card image")
+        h3.sale-card__title
+          | Дни микроблейдинга
+          br
+          span.sale-highlight 20%
+          =" "
+          | скидка
+        p.sale-card__text на микроблейдинг
+        .sale-btn
+          .btn-link__wrap
+            a.btn-link(href="#") Подробнее
+
+  include ../common/_footer

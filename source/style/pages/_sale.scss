@@ -1,0 +1,95 @@
+.sale {
+  > .container {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.sale-card {
+  position: relative;
+  overflow: hidden;
+  width: 47.5%;
+  min-height: 33rem;
+  margin: 0 1% 2rem 1%;
+  padding: 2rem 3rem 7rem 3rem;
+  vertical-align: top;
+  border-radius: .6rem;
+
+  @include m680() {
+    display: block;
+    width: 100%;
+    max-width: 55rem;
+    margin: 0 auto 2rem;
+  }
+  @include m500() {
+    min-height: 26rem;
+  }
+}
+.sale-card__pic {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  img {
+    width: 100%;
+    min-height: 100%;
+
+    object-fit: cover;
+    object-position: 100% 100%;
+  }
+}
+.sale-card__title {
+  font-size: 4.6rem;
+  line-height: 1;
+  position: relative;
+  text-transform: none;
+  color: #fff;
+
+  @include gilroy(bold);
+  @include m1100() {
+    font-size: 4rem;
+  }
+  @include m1000() {
+    font-size: 2.8rem;
+  }
+}
+.sale-highlight {
+  font-size: 7.2rem;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+  text-transform: none;
+  color: #f6882b;
+
+  @include gilroy(bold);
+  @include m1100() {
+    font-size: 6rem;
+    margin-top: .5rem;
+  }
+  @include m1000() {
+    font-size: 4.6rem;
+    margin-top: .5rem;
+  }
+}
+.sale-card__text {
+  font-size: 3.6rem;
+  line-height: 1;
+  position: relative;
+  color: #fff;
+
+  @include gilroy(bold);
+  @include m1100() {
+    font-size: 3rem;
+  }
+  @include m1000() {
+    font-size: 2.4rem;
+  }
+}
+.sale-btn {
+  position: absolute;
+  bottom: 2rem;
+  left: 3rem;
+}

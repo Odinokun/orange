@@ -1,0 +1,110 @@
+extends ../_template
+
+block variables
+  - var title = 'Услуги 2'
+  - var pageHeaderTitle = 'Свадебные прически'
+
+block content
+  include ../common/_menu
+
+  .content.service-02
+
+    include ../common/_page-header
+
+    .container
+      .service-banner.service-banner-02
+        h3.service-banner__title Сделаем яркий момент еще красочнее
+        p.service-banner__text Наши стилисты постоянно учавствуют на международных конкурсах и выставках, с каждым годом оттачивая свое мастерство.
+
+    .container
+      .service-text
+        h2.service-text__title Свадебные прически от профессионалов
+        p.service-text__body
+          | Наши мастера делают свадебные причёски на длинные, средние либо короткие волосы. Удачно подобранная свадебная прическа превращает красивую и яркую невесту в ослепительную красавицу. Главное доверять профессионалам. Наши мастера создадут для вас неповторимые и изысканные свадебные прически, превратив вас в единственную королеву вашего торжества. Во время «пробного визита» — проведите вместе с мастером «репетицию» прически и визажа. В гармонии стиля и ваших желаний ваш свадебный образ заиграет яркими и чарующими красками, а вы будете уверенно держаться и прекрасно смотреться на свадебных фото.
+        p.service-text__body
+          | Какую прическу выбрать для торжественного момента в жизни? Какой должна быть причёска на выпускной? А какой причёска на свадьбу? Должен ли это быть магический объем роскошной шапки волос, волна завитка или это будет аристократический лоск прямых волос? На эти вопросы ответят стилисты салонов красоты «Апельсин», которые своим мастерством делают из обычной жизни праздник, а торжественные минуты праздника — еще более яркими и запоминающимися. Оттого, насколько хорошо вы будете выглядеть в важный для вас день, будут зависеть воспоминания, связанные с этим днем. Чтобы в памяти остались только счастливые минуты и запомнились слова восхищения Вами, стилисты студии неустанно совершенствуются, проходят обучение и знают всё о тенденциях в моделировании стрижек и причесок. Мы знаем, как сделать вас самой красивой и модной.
+
+
+    include ../common/_our-works
+
+    .container
+      .price
+        .price-header
+          h2.price-header__title Цены на свадебные стрижки
+
+        .accordeon
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Стрижки горячими ножницами или с использованием утюга
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Укладка феном легкая, по форме
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+          .accordeon__item
+            //- header
+            .accordeon-title
+              .accordeon-title__click
+              a.accordeon-title__link(href="#") Укладка коктейльная
+            //- content
+            .accordeon-content
+              .accordeon-content__row--head
+                .accordeon-content__name
+                .accordeon-content__price-1 Стилист
+                .accordeon-content__price-2 Топ-стилист
+              .accordeon-content__row
+                .accordeon-content__name Короткие волосы
+                .accordeon-content__price-1 1450р.
+                .accordeon-content__price-2 1600р.
+              .accordeon-content__row
+                .accordeon-content__name Средние волосы
+                .accordeon-content__price-1 1650р.
+                .accordeon-content__price-2 1850р.
+              .accordeon-content__row
+                .accordeon-content__name Длинные волосы
+                .accordeon-content__price-1 2050р.
+                .accordeon-content__price-2 2350р.
+
+    include ../common/_banner-03
+
+  include ../common/_footer

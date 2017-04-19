@@ -1,0 +1,54 @@
+extends ../_template
+
+block variables
+  - var title = 'Супер салон'
+  - var pageHeaderTitle = 'Сеть салонов Апельсин'
+
+block content
+  include ../common/_menu
+
+  .content
+    include ../common/_page-header
+
+    .salone-one
+      .container.salone-one-info
+
+        .salone-one-info__contacts
+          h2.salone-one-info__contacts--title Есенина 1б к.1
+          h3.salone-one-info__contacts--metro Озерки
+          h3.salone-one-info__contacts--phone +7 (812) 678-87-87
+          h3.salone-one-info__contacts--time С 9:00 до 21:00 без выходных
+          .salone-one-info__contacts--btn-wrap
+            .salone-one-info__contacts--btn
+              include ../common/_btn-link
+            .salone-one-info__inst--btn
+              .btn-link__wrap
+                a.btn-link(href="#")
+                  svg
+                    use(xlink:href="assets/img/sprite.svg#inst")
+                  |instagram
+
+        .salone-one-info__text
+          p Шестой салон открыл свои двери для наших любимых клиентов!
+          p Профессионалы высочайшего уровня, только качественная сертифицированная косметика гарантируют Вам великолепный результат, а незабываемая атмосфера красоты и наши заботливые специалисты подарят Вам ощущение удовольствия от посещения нашего салона.
+          p Приходите! Мы ждем Вас!
+
+      .container
+        h2.page-inn__title Фото салона
+
+        include ../common/_salon-one-slider
+
+      .container
+        h2.page-inn__title Сотрудники салона
+
+      include ../common/_salon-masters-carousel
+
+
+      .container.salone-map
+        h2.page-inn__title Адрес салона
+        .map-container
+          script(type='text/javascript', charset='utf-8', async='', src='https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xSpZ_ZrPwRtOp4z1AELo0DPVvyQ2hSjR&width=100%&height=100%&lang=ru_RU&sourceType=constructor&scroll=false')
+
+          //- iframe(src="https://api-maps.yandex.ua/frame/v1/-/CZsYiIoF" width="100%" height="100%" frameborder="0")
+
+  include ../common/_footer

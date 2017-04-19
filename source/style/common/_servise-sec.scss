@@ -1,0 +1,146 @@
+.service-sec {
+  margin-top: -8rem;
+  padding-top: 8rem;
+  .section-title {
+    margin-bottom: 1rem;
+  }
+  .container {
+    padding: 0 1.7rem;
+    text-align: center;
+
+    @extend %clearfix;
+    @include m425() {
+      padding: 1rem 1.5rem;
+    }
+  }
+}
+
+.service-sec-item {
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  overflow: hidden;
+  width: 36rem;
+  height: 30rem;
+  margin: 0 1.3rem 2.5rem 1.3rem;
+  transition: .5s;
+  text-align: left;
+  vertical-align: top;
+  border-radius: .8rem;
+  background-color: #f6882b;
+
+  @include m1000() {
+    width: 32.5rem;
+  }
+  @include m425() {
+    width: 100%;
+    height: 50rem;
+    margin: 0 0 2.5rem 0;
+  }
+  @include m375() {
+    height: 40rem;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    transition: .5s;
+    border-radius: .8rem;
+    background-color: rgba(0,0,0,.3);
+  }
+  &:hover {
+    &::after {
+      transition: .5s;
+      pointer-events: none;
+      opacity: 0;
+    }
+    .service-sec-item__pic {
+      transition: .5s;
+
+      filter: none;
+    }
+    .service-sec-item__text {
+      top: 0;
+      transition: .5s;
+      transform: translate(0%, 0%);
+    }
+    .service-sec-item__list {
+      visibility: visible;
+    }
+  }
+}
+.service-sec-item__pic--wrap {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    content: '';
+    background-color: #ccc;
+  }
+}
+
+.service-sec-item__pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: .5s;
+  border-radius: .8rem;
+
+  filter: grayscale(100%);
+}
+
+.service-sec-item__text {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 0;
+  padding: 3rem 2.5rem;
+  transition: .5s;
+  transform: translate(0%, -100%);
+}
+
+.service-sec-item__title {
+  font-size: 3.8rem;
+  line-height: 2.8rem;
+  transition: .5s;
+  text-transform: none;
+
+  @include m1024() {
+    font-size: 3.4rem;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: #f6882b;
+    }
+  }
+}
+
+.service-sec-item__list {
+  position: absolute;
+  visibility: hidden;
+  margin: 0;
+  padding: 1.5rem 0 0 0;
+}
+
+.service-sec-item__item {
+  padding: 0;
+  list-style: none;
+}
+
+.service-sec-item__link {
+  font-size: 1.8rem;
+  display: inline-block;
+  padding: .8rem 0;
+  color: #fff;
+}

@@ -1,0 +1,43 @@
+extends ../_template
+
+block variables
+  - var title = 'E-mail рассылка'
+  - var pageHeaderTitle = 'E-mail рассылка'
+
+block content
+  include ../common/_menu
+
+  .content
+    include ../common/_page-header
+    .container
+      .sertificate-2-header
+        h2.sertificate-2-header__title Подпишитесь на нашу рассылку прямо сейчас!
+        p Подписавшись на нашу рассылку вы получите:
+
+      .email-notification__list
+        ul
+          li.email-notification__item Самую актуальную информацию об акциях и скидках, проводящихся в сети салов "Апельсин"
+          li.email-notification__item Эксклюзивные скидки и бонусы, доступые только подписчикам рассылки
+          li.email-notification__item Скидочные купоны
+          li.email-notification__item И другую важную и интересную информацию
+
+
+    .email-notification
+      .email-notification__form-wrap
+        form.email-notification__form
+          .email-notification__form-row
+            .email-notification__form-left
+              label Введите Ваш email
+            .email-notification__form-right
+              input(type="email" required)
+
+          .email-notification__btn-wrap
+            button.email-notification__btn Отправить
+
+
+      .email-notification__success
+        span.email-notification__success-title Поздравляем! Теперь ваш адрес в списке рассылки!
+        span.email-notification__success-text Отписаться от рассылки вы можете перейдя по специальной ссылке в каждом из писем.
+
+
+  include ../common/_footer
