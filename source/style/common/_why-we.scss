@@ -1,0 +1,24 @@
+.why-we {
+  & > .container {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.why-we__item {
+  width: 25%;
+  padding: 0 1.5rem;
+  text-align: center;
+
+  @include m680() {
+width: 50%;
+margin-bottom: 2rem;
+  }
+}
+.why-we__icon {
+  display: inline-block;
+  width: 100%;
+  max-width: 6.4rem;
+}

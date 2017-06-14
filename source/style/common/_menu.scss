@@ -25,6 +25,30 @@
     content: '';
   }
 }
+.menu__list-2 {
+  display: flex;
+
+  justify-content: space-between;
+  &::after {
+    display: none;
+  }
+}
+.menu__list-inn {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__list-middle {
+  width: 24%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__list-left,
+.menu__list-right {
+  width: 38%;
+}
 .menu__item {
   display: inline-block;
   padding: 0;

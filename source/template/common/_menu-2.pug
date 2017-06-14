@@ -1,0 +1,44 @@
+nav.menu
+  .container
+    ul.menu__list.menu__list-2
+      .menu__list-inn.menu__list-left
+        li.menu__item
+          a.menu__link(href="#") Салоны
+        li.menu__item
+          a.menu__link(href="#") Окрашивания
+      .menu__list-inn.menu__list-middle
+        li.menu__item
+          a.menu__link.logo(href="#")
+            img(src="assets/img/logo.png", alt="logo")
+      .menu__list-inn.menu__list-right
+        li.menu__item
+          a.menu__link(href="#") Цены
+        li.menu__item
+          a.menu__link(href="#") Преимущества
+        li.menu__item
+          a.menu__link(href="#")
+            .btn-link__wrap
+              a.btn-link(href="#") Записаться
+
+nav.menu-mob
+  .container
+    include ../common/_burger
+    ul.menu-mob__list
+      li.menu-mob__item
+        a.menu-mob__link(href="#") Салоны
+      li.menu-mob__item
+        a.menu-mob__link(href="#") Окрашивания
+      li.menu-mob__item
+        a.menu-mob__link(href="#") Цены
+      li.menu-mob__item
+        a.menu-mob__link(href="#") Преимущества
+
+    a.menu-mobile__logo(href="#")
+      img(src="assets/img/logo.svg", alt="logo")
+
+    .menu-mobile__btn
+      include ../common/_btn-link
+
+      .btn-link__wrap--min
+        a.btn-link(href="#")
+          img(src="assets/img/pencil.svg")
