@@ -10,5 +10,7 @@ module.exports = [
   './source/vendors/jquery-ui/jquery-ui.min.js',
   './bower_components/bxslider-4/dist/jquery.bxslider.min.js',
   './bower_components/svg4everybody/dist/svg4everybody.min.js',
-  './bower_components/lightbox2/dist/js/lightbox.js'
+  './bower_components/lightbox2/dist/js/lightbox.js',
+  './node_modules/slick-carousel/slick/slick.min.js'
+
 ];

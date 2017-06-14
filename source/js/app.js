@@ -56,6 +56,9 @@ $(function() {
   //custom selectbox with jqueryUI
   require('./modules/select-ui')();
 
+  //слайдер в конструкторе
+  require('./modules/lg-slider')();
+
   //Выравнивание высоты фона у sale-card
   // require('./modules/sale-card')();
 

@@ -7,5 +7,7 @@ module.exports = [
   './bower_components/bxslider-4/dist/jquery.bxslider.css',
   './bower_components/animate.css/animate.min.css',
   './source/vendors/jquery-ui/jquery-ui.min.css',
-  './bower_components/lightbox2/dist/css/lightbox.min.css'
+  './bower_components/lightbox2/dist/css/lightbox.min.css',
+  './node_modules/slick-carousel/slick/slick.css',
+  './node_modules/slick-carousel/slick/slick-theme.css'
 ];
