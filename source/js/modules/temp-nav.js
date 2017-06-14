@@ -2,20 +2,22 @@ module.exports = function() {
 
   $(document).ready(function ($) {
     pageWidget(['index',
+                '404',
+                'constructor',
+                'email',
                 'inner',
+                'job',
                 'master-one',
                 'masters',
-                'news',
                 'news-one',
+                'news',
                 'sale',
                 'salon-one',
-                'sertificate',
                 'sertificate-2',
+                'sertificate',
                 'service-1',
                 'service-2',
-                '404',
-                'job',
-                'email']);
+                ]);
   });
 
   function pageWidget(pages) {
