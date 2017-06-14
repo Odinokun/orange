@@ -1,0 +1,30 @@
+.orange-string {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    pointer-events: none;
+    background-color: rgba(246, 136, 43, .83);
+  }
+  .container {
+    display: flex;
+    max-width: 680px;
+    min-height: 20rem;
+
+    align-items: center;
+    justify-content: center;
+  }
+}
+.orange-string__title {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+
+  @include gilroy(bold);
+}

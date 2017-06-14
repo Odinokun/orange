@@ -13,8 +13,8 @@
   text-align: center;
 
   @include m680() {
-width: 50%;
-margin-bottom: 2rem;
+    width: 50%;
+    margin-bottom: 2rem;
   }
 }
 .why-we__icon {
