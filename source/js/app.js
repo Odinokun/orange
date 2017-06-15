@@ -1,7 +1,7 @@
 $(function() {
 
   //Временное меню для разработчика
-  require('./modules/temp-nav')();
+  // require('./modules/temp-nav')();
 
   //preloader
   require('./modules/preloader')();

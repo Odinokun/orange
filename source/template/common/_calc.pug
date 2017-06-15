@@ -1,43 +1,78 @@
-section.tab-sec
+section.calc
   h2.page-inn__title рассчитать стоимость окрашивания — просто!
 
-  
   .container
-    .about-sec__item
-      h3.about-sec__title
-        span.about-sec__highlight 8
-        =' '
-        | салонов класса люкс в Санкт-Петербурге
-      p.about-sec__text Вы выбираете лучшее рядом с вашим домом или работой
+    form.calc-form
+      // BEGIN блок с картинками длины волос
+      .calc-hairs__list
+        .calc-hairs__item
+          img(src="assets/img/hairs-01.jpg", alt="avatar").calc-hairs__pic
+          p.calc-hairs__text 
+            |Короткие 
+            br
+            |волосы
+        .calc-hairs__item
+          img(src="assets/img/hairs-02.jpg", alt="avatar").calc-hairs__pic
+          p.calc-hairs__text 
+            |Средние 
+            br
+            |волосы
+        .calc-hairs__item
+          img(src="assets/img/hairs-03.jpg", alt="avatar").calc-hairs__pic
+          p.calc-hairs__text 
+            |Длинные 
+            br
+            |волосы
+        .calc-hairs__item
+          img(src="assets/img/hairs-04.jpg", alt="avatar").calc-hairs__pic
+          p.calc-hairs__text 
+            |Очень длинные 
+            br
+            |волосы
+        .calc-hairs__item-text
+          p В стоимость окрашивание влодит количество материалов и этапов работ, необходимых для производства вашего неповторимого окрашиваня.
+      // END блок с картинками длины волос
 
-    .about-sec__item
-      h3.about-sec__title
-        span.about-sec__highlight 200
-        =' '
-        | профессиональных мастеров
-      p.about-sec__text Вы всегда будете в курсе новых трендов моды благодаря нашим ТОП стилистам
+      .calc-select__list
+        label.calc-select__label
+          |Укажите длину волос:
+          select.calc-select__select.selectmenu
+            option Короткие волосы
+            option Средние волосы
+            option Длинные волосы
+            option Очень длинные волосы
 
-    .about-sec__item
-      h3.about-sec__title
-        span.about-sec__highlight Лучшая
-        =' '
-        | профессиональная косметика
-      p.about-sec__text Вы всегда будете в курсе новых трендов моды благодаря нашим ТОП стилистам
+        label.calc-select__label
+          |Выбырите желаемое окрашивание:
+          select.calc-select__select.selectmenu
+            option Американское мелирование
+            option Китайское мелирование
+            option Мексиканское мелирование
 
-    .about-sec__item
-      h3.about-sec__title
-        span.about-sec__highlight Врачи
-        =' '
-        | с высшим медицинским образованием
-      p.about-sec__text В наших салонах красота и здоровье вашего тела и лица в безопасности
+        .calc-select__btn-wrap#calc-select__dropdown
+          span.calc-select__btn Рассчитать
 
-    .about-sec__item
-      h3.about-sec__title
-        span.about-sec__highlight Индивидуальный
-        =' '
-        | подход и
-        =' '
-        span.about-sec__highlight гарантия
-        =' '
-        | качества
-      p.about-sec__text Вам порекомендуют процедуру или услуги, которые подходят именно вам
+      .calc-hairs__dropbox
+        .calc-hairs__grey-box
+          .calc-hairs__grey-price
+            |Стоимость окрашивания
+            br
+            span 3500р.
+          .calc-hairs__grey-promo
+            |Промо-код
+            br
+            span 2975
+          .calc-hairs__grey-input
+            input(type="text" placeholder="Ваш e-mail для получения промо-кода")
+          .calc-hairs__grey-btn
+            .single-certificate__btn-wrap
+              input(type="submit" value="Отправить").single-certificate__btn 
+
+        .calc-hairs__footer
+          p для фиксации цены — предъявление промо-кода обязательно
+          .calc-hairs__footer-btn
+            .calc-select__btn-wrap
+              a(href="#").calc-select__btn Позвонить и записаться
+          .calc-hairs__footer-btn
+            .calc-select__btn-wrap
+              a(href="#").calc-select__btn Записаться онлайн

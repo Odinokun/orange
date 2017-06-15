@@ -161,34 +161,75 @@
       </section>
       <!-- END   секция с табами-->
       <!-- BEGIN секция с калькулятором-->
-      <section class="tab-sec">
+      <section class="calc">
         <h2 class="page-inn__title">рассчитать стоимость окрашивания — просто!</h2>
         <div class="container">
-          <div class="about-sec__item">
-            <h3 class="about-sec__title"><span class="about-sec__highlight">8</span> салонов класса люкс в Санкт-Петербурге
-            </h3>
-            <p class="about-sec__text">Вы выбираете лучшее рядом с вашим домом или работой</p>
-          </div>
-          <div class="about-sec__item">
-            <h3 class="about-sec__title"><span class="about-sec__highlight">200</span> профессиональных мастеров
-            </h3>
-            <p class="about-sec__text">Вы всегда будете в курсе новых трендов моды благодаря нашим ТОП стилистам</p>
-          </div>
-          <div class="about-sec__item">
-            <h3 class="about-sec__title"><span class="about-sec__highlight">Лучшая</span> профессиональная косметика
-            </h3>
-            <p class="about-sec__text">Вы всегда будете в курсе новых трендов моды благодаря нашим ТОП стилистам</p>
-          </div>
-          <div class="about-sec__item">
-            <h3 class="about-sec__title"><span class="about-sec__highlight">Врачи</span> с высшим медицинским образованием
-            </h3>
-            <p class="about-sec__text">В наших салонах красота и здоровье вашего тела и лица в безопасности</p>
-          </div>
-          <div class="about-sec__item">
-            <h3 class="about-sec__title"><span class="about-sec__highlight">Индивидуальный</span> подход и <span class="about-sec__highlight">гарантия</span> качества
-            </h3>
-            <p class="about-sec__text">Вам порекомендуют процедуру или услуги, которые подходят именно вам</p>
-          </div>
+          <form class="calc-form">
+            <!-- BEGIN блок с картинками длины волос-->
+            <div class="calc-hairs__list">
+              <div class="calc-hairs__item"><img class="calc-hairs__pic" src="assets/img/hairs-01.jpg" alt="avatar">
+                <p class="calc-hairs__text">
+                   Короткие <br>волосы</p>
+              </div>
+              <div class="calc-hairs__item"><img class="calc-hairs__pic" src="assets/img/hairs-02.jpg" alt="avatar">
+                <p class="calc-hairs__text">
+                   Средние <br>волосы</p>
+              </div>
+              <div class="calc-hairs__item"><img class="calc-hairs__pic" src="assets/img/hairs-03.jpg" alt="avatar">
+                <p class="calc-hairs__text">
+                   Длинные <br>волосы</p>
+              </div>
+              <div class="calc-hairs__item"><img class="calc-hairs__pic" src="assets/img/hairs-04.jpg" alt="avatar">
+                <p class="calc-hairs__text">
+                   Очень длинные <br>волосы</p>
+              </div>
+              <div class="calc-hairs__item-text">
+                <p>В стоимость окрашивание влодит количество материалов и этапов работ, необходимых для производства вашего неповторимого окрашиваня.</p>
+              </div>
+            </div>
+            <!-- END блок с картинками длины волос-->
+            <div class="calc-select__list">
+              <label class="calc-select__label">Укажите длину волос:
+                <select class="calc-select__select selectmenu">
+                  <option>Короткие волосы</option>
+                  <option>Средние волосы</option>
+                  <option>Длинные волосы</option>
+                  <option>Очень длинные волосы</option>
+                </select>
+              </label>
+              <label class="calc-select__label">Выбырите желаемое окрашивание:
+                <select class="calc-select__select selectmenu">
+                  <option>Американское мелирование</option>
+                  <option>Китайское мелирование</option>
+                  <option>Мексиканское мелирование</option>
+                </select>
+              </label>
+              <div class="calc-select__btn-wrap" id="calc-select__dropdown"><span class="calc-select__btn">Рассчитать</span></div>
+            </div>
+            <div class="calc-hairs__dropbox">
+              <div class="calc-hairs__grey-box">
+                <div class="calc-hairs__grey-price">Стоимость окрашивания<br><span>3500р.</span></div>
+                <div class="calc-hairs__grey-promo">Промо-код<br><span>2975</span></div>
+                <div class="calc-hairs__grey-input">
+                  <input type="text" placeholder="Ваш e-mail для получения промо-кода">
+                </div>
+                <div class="calc-hairs__grey-btn">
+                  <div class="single-certificate__btn-wrap">
+                    <input class="single-certificate__btn" type="submit" value="Отправить">
+                  </div>
+                </div>
+              </div>
+              <div class="calc-hairs__footer">
+                <p>для фиксации цены — предъявление промо-кода обязательно</p>
+                <div class="calc-hairs__footer-btn">
+                  <div class="calc-select__btn-wrap"><a class="calc-select__btn" href="#">Позвонить и записаться</a></div>
+                </div>
+                <div class="calc-hairs__footer-btn">
+                  <div class="calc-select__btn-wrap"><a class="calc-select__btn" href="#">Записаться онлайн</a></div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </section>
       <!-- END   секция с калькулятором-->

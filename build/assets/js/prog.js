@@ -33,6 +33,8 @@ $('.email-notification__btn').on('click', function() {
 
 // Begin выпадающий блок в секции с калькулятором
 $('#calc-select__dropdown').on('click', function() {
+     // e.preventDefault();
   $('.calc-hairs__dropbox').toggleClass('active');
+  // return false;
 });
 // End выпадающий блок в секции с калькулятором

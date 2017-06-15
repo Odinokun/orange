@@ -64,6 +64,11 @@
     @content;
   }
 }
+@mixin m750 {
+  @media screen and (max-width: 750px) {
+    @content;
+  }
+}
 @mixin m680 {
   @media screen and (max-width: 680px) {
     @content;
