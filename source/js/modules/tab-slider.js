@@ -1,11 +1,12 @@
 module.exports = function() {
 
   //слайдер в конструкторе
-  $('#lg-slider').slick({
-    dots: true,
+  $('#tab-sec__slider').slick({
+    dots: false,
     infinite: true,
     autoplay:true,
     speed: 1000,
+    fade:true,
   });
 
 };

@@ -59,6 +59,9 @@ $(function() {
   //слайдер в конструкторе
   require('./modules/lg-slider')();
 
+  //слайдер в конструкторе
+  require('./modules/tab-slider')();
+
   //Выравнивание высоты фона у sale-card
   // require('./modules/sale-card')();
 

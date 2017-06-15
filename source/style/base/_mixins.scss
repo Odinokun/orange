@@ -53,6 +53,11 @@
     @content;
   }
 }
+@mixin m850 {
+  @media screen and (max-width: 850px) {
+    @content;
+  }
+}
 //tablets
 @mixin m768 {
   @media screen and (max-width: 768px) {
