@@ -2,9 +2,9 @@ module.exports = function() {
 
   //слайдер в конструкторе
   $('#lg-slider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
-    autoplay:true,
+    autoplay: false,
     speed: 1000,
   });
 
