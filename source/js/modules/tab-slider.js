@@ -1,7 +1,7 @@
 module.exports = function() {
 
   //слайдер в конструкторе
-  $('#tab-sec__slider').slick({
+  $('.tab-sec__slider').slick({
     dots: false,
     infinite: true,
     autoplay:true,

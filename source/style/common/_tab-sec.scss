@@ -80,8 +80,11 @@
 
 // BEGIN tab-sec__item-middle
 .tab-sec__item-middle {
+  position: absolute;
   width: 40%;
   padding-right: 8rem;
+  pointer-events: none;
+  opacity: 0;
 
   @include m850() {
     width: 65%;
@@ -93,6 +96,11 @@
     &::before {
       display: none;
     }
+  }
+  &.active {
+    position: static;
+    pointer-events: auto;
+    opacity: 1;
   }
   &::before {
     position: absolute;
@@ -122,7 +130,10 @@
 
 // BEGIN tab-sec__item-right
 .tab-sec__item-right {
+  position: absolute;
   width: 30%;
+  pointer-events: none;
+  opacity: 0;
 
   @include m850() {
     width: 35%;
@@ -130,6 +141,11 @@
   @include m600() {
     width: 100%;
     max-width: 40rem;
+  }
+  &.active {
+    position: static;
+    pointer-events: auto;
+    opacity: 1;
   }
 }
 .tab-sec__slider {

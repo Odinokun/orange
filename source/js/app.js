@@ -62,6 +62,9 @@ $(function() {
   //слайдер в конструкторе
   require('./modules/tab-slider')();
 
+  //табы в конструкторе
+  require('./modules/tabs')();
+
   //Выравнивание высоты фона у sale-card
   // require('./modules/sale-card')();
 

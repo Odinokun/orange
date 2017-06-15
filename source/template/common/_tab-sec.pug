@@ -6,25 +6,61 @@ section.tab-sec
       header
         h3.tab-sec__title Виды окрашивания
       .tab-sec__tab-list
-        .tab-sec__tab-item Шатуш
-        .tab-sec__tab-item Омбре
-        .tab-sec__tab-item Балаяж
-        .tab-sec__tab-item.active Мелирование
-        .tab-sec__tab-item Брондирование
-        .tab-sec__tab-item Блондирование
-        .tab-sec__tab-item Творческое окрашивание
+        .tab-sec__tab-item(data-tab=".tab-sec__item-01") Шатуш
+        .tab-sec__tab-item(data-tab=".tab-sec__item-02") Омбре
+        .tab-sec__tab-item(data-tab=".tab-sec__item-03") Балаяж
+        .tab-sec__tab-item.active(data-tab=".tab-sec__item-01") Мелирование
+        .tab-sec__tab-item(data-tab=".tab-sec__item-02") Брондирование
+        .tab-sec__tab-item(data-tab=".tab-sec__item-03") Блондирование
+        .tab-sec__tab-item(data-tab=".tab-sec__item-01") Творческое окрашивание
 
-    .tab-sec__item.tab-sec__item-middle
+    .tab-sec__item.tab-sec__item-01.tab-sec__item-middle.active
       header
         h3.tab-sec__title Описание
 
       h4.tab-sec__text-title Мелирование Highlighting
       p Суть хайлайтинга волос, как и в случае с хайлайтером в декоративной косметике, - получение сияющего, светящегося изнутри образа за счет высветления и выделения участков волос в периметре причёски. Для подсветки прядей используются светлые оттенки теплых или холодных тонов, которые подбираются исходя из Вашего цветотипа.
 
-    .tab-sec__item.tab-sec__item-right
+    .tab-sec__item.tab-sec__item-01.tab-sec__item-right.active
       header
         h3.tab-sec__title Пример
-      .tab-sec__slider#tab-sec__slider
+      .tab-sec__slider.tab-sec__slider
+        .tab-sec__slider-item
+          img(src="assets/img/tab-sec-slider/slide-01.jpg", alt="girl")
+        .tab-sec__slider-item
+          img(src="assets/img/tab-sec-slider/slide-02.jpg", alt="girl")
+        .tab-sec__slider-item
+          img(src="assets/img/tab-sec-slider/slide-03.jpg", alt="girl")
+
+    .tab-sec__item.tab-sec__item-02.tab-sec__item-middle
+      header
+        h3.tab-sec__title Описание 2
+
+      h4.tab-sec__text-title Мелирование Highlighting
+      p Суть хайлайтинга волос, как и в случае с хайлайтером в декоративной косметике, - получение сияющего, светящегося изнутри образа за счет высветления и выделения участков волос в периметре причёски. Для подсветки прядей используются светлые оттенки теплых или холодных тонов, которые подбираются исходя из Вашего цветотипа.
+
+    .tab-sec__item.tab-sec__item-02.tab-sec__item-right
+      header
+        h3.tab-sec__title Пример 3
+      .tab-sec__slider.tab-sec__slider
+        .tab-sec__slider-item
+          img(src="assets/img/tab-sec-slider/slide-01.jpg", alt="girl")
+        .tab-sec__slider-item
+          img(src="assets/img/tab-sec-slider/slide-02.jpg", alt="girl")
+        .tab-sec__slider-item
+          img(src="assets/img/tab-sec-slider/slide-03.jpg", alt="girl")
+
+    .tab-sec__item.tab-sec__item-03.tab-sec__item-middle
+      header
+        h3.tab-sec__title Описание 3
+
+      h4.tab-sec__text-title Мелирование Highlighting
+      p Суть хайлайтинга волос, как и в случае с хайлайтером в декоративной косметике, - получение сияющего, светящегося изнутри образа за счет высветления и выделения участков волос в периметре причёски. Для подсветки прядей используются светлые оттенки теплых или холодных тонов, которые подбираются исходя из Вашего цветотипа.
+
+    .tab-sec__item.tab-sec__item-03.tab-sec__item-right
+      header
+        h3.tab-sec__title Пример 3
+      .tab-sec__slider.tab-sec__slider
         .tab-sec__slider-item
           img(src="assets/img/tab-sec-slider/slide-01.jpg", alt="girl")
         .tab-sec__slider-item
