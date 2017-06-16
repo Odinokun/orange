@@ -65,14 +65,15 @@
   padding: .2rem 2rem .1rem 2rem;
   cursor: pointer;
   transition: .5s;
-  color: #868686;
+  color: #fff;
   border: .1rem solid transparent;
   border: .1rem solid #f59d1c;
   border-radius: .8rem;
+  background-color: #f59d1c;
   &:hover,
   &.active {
-    color: #fff;
-    background-color: #f59d1c;
+    color: #868686;
+    background-color: #fff;
   }
 }
 // END tab-sec__item-left
