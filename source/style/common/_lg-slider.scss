@@ -49,10 +49,18 @@
   padding-bottom: 7rem;
   .btn-link__wrap {
     transform: translateX(17rem);
+  @include m600() {
+    transform: translateX(0);
+
+  }
   }
   .btn-link {
     padding-right: 3rem;
     padding-left: 3rem;
+  }
+  @include m600() {
+    max-width: 100%;
+    text-align: center;
   }
 }
 .lg-slider__title {
@@ -62,6 +70,7 @@
   letter-spacing: .4px;
   text-transform: uppercase;
   color: #fff;
+  text-shadow: 0px 0px 30px rgba(248, 191, 140, 1);
 
   @include gilroy(bold);
 }
@@ -72,6 +81,7 @@
   letter-spacing: .4px;
   text-transform: uppercase;
   color: #fff;
+  text-shadow: 0px 0px 30px rgba(248, 191, 140, 1);
 
   @include gilroy(bold);
 }

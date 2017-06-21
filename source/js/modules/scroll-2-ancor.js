@@ -65,4 +65,17 @@ module.exports = function () {
     });
     // end scroll 2 ancor mobile menu
 
+    // begin scroll 2 ancor универсальная ссылка
+    $(function() {
+      $('.scroll-link[href*=\\#]').on("click", function(e){
+         var anchor = $(this);
+         $('html, body').stop().animate({
+          scrollTop: $(anchor.attr('href')).offset().top - 85 + 'px'
+         }, 1000);
+         e.preventDefault();
+      });
+      return false;
+    });
+    // end scroll 2 ancor универсальная ссылка
+
 };

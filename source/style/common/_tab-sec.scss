@@ -99,7 +99,7 @@
     }
   }
   &.active {
-    position: static;
+    position: relative;
     pointer-events: auto;
     opacity: 1;
   }
@@ -144,7 +144,7 @@
     max-width: 40rem;
   }
   &.active {
-    position: static;
+    position: relative;
     pointer-events: auto;
     opacity: 1;
   }
@@ -157,8 +157,9 @@
       height: 45rem;
     }
     img {
+      height: 45rem;
       display: block;
-      width: 100%;
+      // width: 100%;
     }
   }
   .slick-prev,
