@@ -1,4 +1,5 @@
 .tab-sec {
+  overflow: hidden;
   padding-bottom: 2rem;
   & > .container {
     display: flex;
@@ -132,6 +133,7 @@
 // BEGIN tab-sec__item-right
 .tab-sec__item-right {
   position: absolute;
+  // position: relative;
   width: 30%;
   pointer-events: none;
   opacity: 0;
@@ -150,16 +152,24 @@
   }
 }
 .tab-sec__slider {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+
+  @include m750() {
+    width: 200px;
+  }
+  @include m600() {
+    width: 240px;
+  }
   .slick-list {
-    overflow: hidden;
-    border-radius: 2rem;
     .tab-sec__slider-item {
-      height: 45rem;
+      overflow: hidden;
+      border-radius: 2rem;
     }
     img {
-      height: 45rem;
       display: block;
-      // width: 100%;
+      width: 100%;
     }
   }
   .slick-prev,
