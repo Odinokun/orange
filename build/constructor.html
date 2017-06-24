@@ -196,38 +196,43 @@
         <div class="container">
           <form class="calc-form">
             <!-- BEGIN блок с картинками длины волос-->
-            <div class="calc-hairs__list">
-              <div class="calc-hairs__item"><img class="calc-hairs__pic" src="assets/img/hairs-01.jpg" alt="avatar">
+            <div class="calc-hairs__list"><span class="calc-hairs__list-title">Выберите длину волос:</span>
+              <div class="calc-hairs__item active">
+                <label>
+                  <input type="radio" name="hair-calc" checked>
+                </label>
+                <div class="calc-hairs__pic"></div>
                 <p class="calc-hairs__text">
-                   Короткие <br>волосы</p>
+                   Короткие волосы</p>
               </div>
-              <div class="calc-hairs__item"><img class="calc-hairs__pic" src="assets/img/hairs-02.jpg" alt="avatar">
+              <div class="calc-hairs__item">
+                <label>
+                  <input type="radio" name="hair-calc">
+                </label>
+                <div class="calc-hairs__pic"></div>
                 <p class="calc-hairs__text">
-                   Средние <br>волосы</p>
+                   Средние волосы</p>
               </div>
-              <div class="calc-hairs__item"><img class="calc-hairs__pic" src="assets/img/hairs-03.jpg" alt="avatar">
+              <div class="calc-hairs__item">
+                <label>
+                  <input type="radio" name="hair-calc">
+                </label>
+                <div class="calc-hairs__pic"></div>
                 <p class="calc-hairs__text">
-                   Длинные <br>волосы</p>
+                   Длинные волосы</p>
               </div>
-              <div class="calc-hairs__item"><img class="calc-hairs__pic" src="assets/img/hairs-04.jpg" alt="avatar">
+              <div class="calc-hairs__item">
+                <label>
+                  <input type="radio" name="hair-calc">
+                </label>
+                <div class="calc-hairs__pic"></div>
                 <p class="calc-hairs__text">
-                   Очень длинные <br>волосы</p>
-              </div>
-              <div class="calc-hairs__item-text">
-                <p>В стоимость окрашивание влодит количество материалов и этапов работ, необходимых для производства вашего неповторимого окрашиваня.</p>
+                   Очень длинные волосы</p>
               </div>
             </div>
             <!-- END блок с картинками длины волос-->
             <div class="calc-select__list">
-              <label class="calc-select__label">Укажите длину волос:
-                <select class="calc-select__select selectmenu">
-                  <option>Короткие волосы</option>
-                  <option>Средние волосы</option>
-                  <option>Длинные волосы</option>
-                  <option>Очень длинные волосы</option>
-                </select>
-              </label>
-              <label class="calc-select__label">Выбырите желаемое окрашивание:
+              <label class="calc-select__label">Выберите желаемое окрашивание:
                 <select class="calc-select__select selectmenu">
                   <option>Американское мелирование</option>
                   <option>Китайское мелирование</option>
@@ -235,6 +240,9 @@
                 </select>
               </label>
               <div class="calc-select__btn-wrap" id="calc-select__dropdown"><span class="calc-select__btn">Рассчитать</span></div>
+            </div>
+            <div class="calc-hairs__item-text">
+              <p>В стоимость окрашивание влодит количество материалов и этапов работ, необходимых для производства вашего неповторимого окрашиваня.</p>
             </div>
             <div class="calc-hairs__dropbox">
               <div class="calc-hairs__grey-box">

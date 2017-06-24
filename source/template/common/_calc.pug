@@ -5,45 +5,36 @@ section.calc#calculator
     form.calc-form
       // BEGIN блок с картинками длины волос
       .calc-hairs__list
-        .calc-hairs__item
-          img(src="assets/img/hairs-01.jpg", alt="avatar").calc-hairs__pic
+        span.calc-hairs__list-title Выберите длину волос:
+        .calc-hairs__item.active
+          label
+            input(type="radio" name="hair-calc" checked)
+          .calc-hairs__pic
           p.calc-hairs__text 
-            |Короткие 
-            br
-            |волосы
+            |Короткие волосы
         .calc-hairs__item
-          img(src="assets/img/hairs-02.jpg", alt="avatar").calc-hairs__pic
+          label
+            input(type="radio" name="hair-calc")
+          .calc-hairs__pic
           p.calc-hairs__text 
-            |Средние 
-            br
-            |волосы
+            |Средние волосы
         .calc-hairs__item
-          img(src="assets/img/hairs-03.jpg", alt="avatar").calc-hairs__pic
+          label
+            input(type="radio" name="hair-calc")
+          .calc-hairs__pic
           p.calc-hairs__text 
-            |Длинные 
-            br
-            |волосы
+            |Длинные волосы
         .calc-hairs__item
-          img(src="assets/img/hairs-04.jpg", alt="avatar").calc-hairs__pic
+          label
+            input(type="radio" name="hair-calc")
+          .calc-hairs__pic
           p.calc-hairs__text 
-            |Очень длинные 
-            br
-            |волосы
-        .calc-hairs__item-text
-          p В стоимость окрашивание влодит количество материалов и этапов работ, необходимых для производства вашего неповторимого окрашиваня.
+            |Очень длинные волосы
       // END блок с картинками длины волос
 
       .calc-select__list
         label.calc-select__label
-          |Укажите длину волос:
-          select.calc-select__select.selectmenu
-            option Короткие волосы
-            option Средние волосы
-            option Длинные волосы
-            option Очень длинные волосы
-
-        label.calc-select__label
-          |Выбырите желаемое окрашивание:
+          |Выберите желаемое окрашивание:
           select.calc-select__select.selectmenu
             option Американское мелирование
             option Китайское мелирование
@@ -51,6 +42,9 @@ section.calc#calculator
 
         .calc-select__btn-wrap#calc-select__dropdown
           span.calc-select__btn Рассчитать
+
+      .calc-hairs__item-text
+        p В стоимость окрашивание влодит количество материалов и этапов работ, необходимых для производства вашего неповторимого окрашиваня.
 
       .calc-hairs__dropbox
         .calc-hairs__grey-box

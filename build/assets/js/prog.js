@@ -37,7 +37,7 @@ $('.calc-hairs__item').on('click', function() {
         $('.calc-hairs__item').removeClass('active');
         $(this).addClass('active');
     }else {
-        console.log('чёт поломалось');
+        console.log('epiic fail');
     }
 });
 

@@ -4,6 +4,7 @@ module.exports = function() {
     mode: 'fade',
     auto: true,
     pager: false,
+    pause: 6000
   });
 
 };
