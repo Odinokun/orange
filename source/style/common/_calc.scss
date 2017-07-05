@@ -295,11 +295,11 @@
 }
 .calc-hairs__grey-input {
   width: 37%;
-  margin-bottom: 1.5rem;
   padding: 0 1rem;
 
   @include m750() {
     width: 45%;
+    margin-bottom: 1.5rem;
   }
   @include m600() {
     width: 100%;
