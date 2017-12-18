@@ -1,0 +1,131 @@
+// begin mobile snow
+.snow {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+
+  @include m1024() {
+    display: block;
+  }
+}
+// end mobile snow
+
+// begin desctop snow
+.layers {
+  position: fixed;
+  z-index: 1000;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: .5;
+
+  @include m1024() {
+    display: none;
+  }
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, -100%, 0);
+}
+
+.layer--background {
+  animation: fallLoop 20000ms linear infinite;
+  opacity: .4;
+
+  .snowflake {
+    height: 20%;
+    animation: spin 30000ms linear infinite;
+  }
+}
+
+.layer--middleground {
+  animation: fallLoop 15000ms linear infinite;
+  opacity: .6;
+
+  .snowflake {
+    height: 33.33333%;
+    animation: spin 25000ms linear infinite;
+  }
+}
+
+.layer--foreground {
+  animation: fallLoop 10000ms linear infinite;
+  opacity: .8;
+  .snowflake {
+    height: 50%;
+    animation: spin 20000ms linear infinite;
+  }
+}
+
+.snowflakes {
+  position: relative;
+  left: -150vw;
+  display: flex;
+  flex-wrap: wrap;
+  //width: 100%;
+  width: 400vw;
+  height: 200vh;
+  transform: scale(.3);
+
+  align-content: flex-start;
+}
+
+.snowflake {
+  box-sizing: border-box;
+
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.snowflake--small {
+  width: 10%;
+
+  svg {
+    height: 70%;
+  }
+}
+
+.snowflake--medium {
+  width: 20%;
+
+  svg {
+    height: 80%;
+  }
+}
+
+.snowflake--large {
+  width: 30%;
+
+  svg {
+    height: 100%;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fallLoop {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+  to {
+    transform: translate3d(0, 0%, 0);
+  }
+}

@@ -65,6 +65,9 @@ $(function() {
   //табы в конструкторе
   require('./modules/tabs')();
 
+  //снег
+  require('./modules/snow')();
+
   //Выравнивание высоты фона у sale-card
   // require('./modules/sale-card')();
 

@@ -6,13 +6,16 @@
     margin-top: -14rem;
   }
   @include m768() {
-    margin-top: -12rem;
-  }
-  @include m680() {
     margin-top: -10rem;
   }
-  @include m425() {
+  @include m680() {
     margin-top: -8rem;
+  }
+  @include m600() {
+    margin-top: -6rem;
+  }
+  @include m500() {
+    margin-top: -5rem;
   }
 }
 .slide-btn__link {
