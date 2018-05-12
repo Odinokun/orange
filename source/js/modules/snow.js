@@ -46,7 +46,7 @@ module.exports = function() {
   Snow.prototype.draw = function() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-    ctx.fillStyle = '#9ac6f2';
+    ctx.fillStyle = '#80d5f0';
     ctx.fill();
     ctx.closePath();
   }
